@@ -24,4 +24,51 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'D3Euronism';
+}
+
+.card1{
+  background-image: linear-gradient(45deg,#f15a29 30%,#f7941d 100%);
+}
+.card2{
+  background-image: linear-gradient(45deg,#f7941d 30%,#ffb606 100%);
+}
+.card3{
+  background-image: linear-gradient(45deg,#773f18 30%,#a47a5d 100%);
+}
+ul.bullets {
+  list-style-type: disc; /* This sets the bullet style to a disc */
+  /* You can also use other values like 'circle', 'square', etc. */
+}
+
+/* styles/modal.css */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
