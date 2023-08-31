@@ -36,31 +36,11 @@ Modal.setAppElement('#__next'); // Set the app root element
 
 const VideoModal = ({ isOpen, onClose, video }) => {
   return (
-    // <Modal
-    //   isOpen={isOpen}
-    //   onRequestClose={onClose}
-    //   contentLabel="Video Modal"
-    //   className="modal"
-    //   overlayClassName="overlay"
-    // >
-    //   <button className="close-button" onClick={onClose}>
-    //     <Image src="/close.svg" alt="Close" width={24} height={24} />
-    //   </button>
-    //   <div className="aspect-w-16 aspect-h-9">
-    //     <iframe
-    //       src="/steps/testVideo.mp4"
-    //       title="Video"
-    //       allowFullScreen
-    //       frameBorder="0"
-    //       autoPlay
-    //     />
-    //   </div>
-    // </Modal>
     <Modal
       isOpen={isOpen}
       onRequestClose={onClose}
       contentLabel="Video Modal"
-      className="modal"
+      className="modal md:w-[30%] w-[80%]"
       overlayClassName="overlay"
     >
       <button className="close-button" onClick={onClose}>

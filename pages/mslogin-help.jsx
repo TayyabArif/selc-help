@@ -1,8 +1,11 @@
+import Header from '@/components/Header';
 import Layout from '@/components/Layout'
 import LoginGuideCard from '@/components/LoginGuideCard'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const msloginHelp = () => {
+  const router = useRouter();
   const loginStep = {
     heading: "Login through MS",
     steps: [
@@ -16,15 +19,17 @@ const msloginHelp = () => {
 
   return (
     <Layout>
-      <div className='flex flex-col w-full px-10 h-full my-5'>
-        <div>
+      <div className='flex flex-col w-full h-full min-h-screen'>
+      <div className='w-full flex lg:justify-start justify-center'>
         <img
           src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-white.png"
           alt="logo"
-          className="w-[20%] h-20"
+          className="lg:w-[20%] md:w-[30%] w-[70%] md:h-20 h-[90px] lg:hidden block"
+          onClick={() => router.push('/')}
         />
+        <Header />
         </div>
-        <div className='flex flex-wrap w-full mt-5 gap-5 justify-center'>
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center lg:justify-start my-5 mb-10'>
           <LoginGuideCard data={loginStep} />
         </div>
       </div>

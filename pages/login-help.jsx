@@ -1,8 +1,11 @@
+import Header from '@/components/Header';
 import Layout from '@/components/Layout'
 import LoginGuideCard from '@/components/LoginGuideCard'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const loginHelp = () => {
+  const router = useRouter()
   const loginStep = {
     heading: "How to Login & set Password",
     image: "/steps/login-vector.jpeg",
@@ -25,15 +28,17 @@ const loginHelp = () => {
   };
   return (
     <Layout>
-      <div className='flex flex-col w-full px-10 h-full my-5'>
-        <div>
+      <div className='flex flex-col w-full min-h-screen'>
+        <div className='w-full flex lg:justify-start justify-center'>
         <img
           src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-white.png"
           alt="logo"
-          className="w-[20%] h-20"
+          className="lg:w-[20%] md:w-[30%] w-[70%] md:h-20 h-[90px] lg:hidden block"
+          onClick={() => router.push('/')}
         />
+        <Header />
         </div>
-        <div className='flex flex-wrap w-full mt-5 gap-5'>
+        <div className='flex px-10 md:flex-wrap md:flex-row flex-col items-center justify-center xl:justify-start w-full mt-5 gap-5 my-5'>
           <LoginGuideCard data={loginStep} />
           <LoginGuideCard data={securityQuestion}/>
           <LoginGuideCard data={updateProfile}/>
