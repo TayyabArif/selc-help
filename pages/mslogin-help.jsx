@@ -4,21 +4,14 @@ import React from 'react'
 
 const msloginHelp = () => {
   const loginStep = {
-    heading: "Why use MS Login?",
+    heading: "Login through MS",
     steps: [
       "Microsoft 365 is our cloud-powered productivity platform. ​​",
       "The latest productivity apps, such as Microsoft Teams, Word, Excel, PowerPoint, Outlook, OneDrive, and so much more.​",
       "The ability to install on PCs, Macs, tablets, and phones"
     ],
-    image: "/question.jpg"
-  };
-  const setupStep = {
-    heading: "How to use MS login",
-    steps: [
-      "Enter Username - 'Student number' <strong>@myselcedu.com </strong> ​",
-      `Enter Password -It would be the same password utilized for Moodle login ​`
-    ],
-    image: "/question.jpg"
+    image: "/steps/mslogin1.jpeg",
+    video: "/steps/msoffice.mp4"
   };
 
   return (
@@ -31,12 +24,8 @@ const msloginHelp = () => {
           className="w-[20%] h-20"
         />
         </div>
-        <p className='text-[25px] text-primary underline w-full text-center'>
-          Follow this Step by Step Guide for MS login Help
-        </p>
-        <div className='flex flex-wrap w-full mt-5 gap-5'>
+        <div className='flex flex-wrap w-full mt-5 gap-5 justify-center'>
           <LoginGuideCard data={loginStep} />
-          <LoginGuideCard data={setupStep}/>
         </div>
       </div>
     </Layout>

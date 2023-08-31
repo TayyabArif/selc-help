@@ -12,13 +12,13 @@ const Card = ({bg, heading,subhead, image, redirect }) => {
     onClick={() => router.push(redirect)}
   >
     <div className="text-center h-full">
-      <Image src={image} alt="card iamge" width={60} height={60} className="mx-auto mb-5 h-[40%]" />
-      <p className="bottom-3 right-6 text-white text-[18px] font-bold mb-2 h-[30%]">
+      <Image src={image} alt="card iamge" width={100} height={100} className="mx-auto mb-5 h-[40%]" />
+      <p className="flex flex-col justify-center bottom-3 right-6 text-white text-[22px] font-bold mb-2 h-[30%]">
         {heading}
       </p>
-      <p className="bottom-3 right-6 text-white text-sm h-[30%]">
+      {/* <p className="bottom-3 right-6 text-white text-sm h-[30%]">
         {subhead}
-      </p>
+      </p> */}
     </div>
     <div className="transition-transform transform origin-right opacity-0 group-hover:opacity-100 group-hover:scale-105 absolute right-6 top-1/2 -translate-y-1/2">
     <Image src="/rightTag.svg" alt="arrow" width={24} height={24} />

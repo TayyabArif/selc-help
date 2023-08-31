@@ -34,7 +34,7 @@ import Image from 'next/image';
 
 Modal.setAppElement('#__next'); // Set the app root element
 
-const VideoModal = ({ isOpen, onClose }) => {
+const VideoModal = ({ isOpen, onClose, video }) => {
   return (
     // <Modal
     //   isOpen={isOpen}
@@ -68,7 +68,7 @@ const VideoModal = ({ isOpen, onClose }) => {
       </button>
       <div className="aspect-w-16 aspect-h-9">
         <video controls autoPlay className='h-[500px] w-[500px]'>
-          <source src="/steps/testVideo.mp4" type="video/mp4"/>
+          <source src={video} type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
       </div>
