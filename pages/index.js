@@ -9,21 +9,12 @@ export default function Home() {
       <div className="flex w-full flex-col bg-white h-full">
         <div
           className="flex flex-col justify-center items-center bg-cover bg-center w-full h-[350px]"
-          style={{ backgroundImage: `url("/home-bg.png")` }}
+          style={{ backgroundImage: `url("/home-bg.png")`}}
         >
+           <div className="absolute inset-0 bg-black opacity-40 w-full h-[350px]" />
           <div className="text-center transition-transform transform hover:scale-110 duration-1000 w-full flex flex-col">
-            <div className=" flex itemx-center justify-center">
-              <img
-                src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-white.png"
-                alt="logo"
-                className="w-[40%] h-40"
-              />
-            </div>
-            <p className="text-white font-bold text-[35px] font-custom">
+            <p className="text-white font-bold text-[55px] font-custom">
             Welcome to Student Help Desk
-            </p>
-            <p className="text-white font-medium text-[18px] font-custom">
-              Check our step by step guide. Feel free to contact us
             </p>
           </div>
         </div>
