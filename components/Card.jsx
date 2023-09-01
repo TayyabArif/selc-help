@@ -3,14 +3,22 @@ import React from 'react'
 import { useRouter } from "next/router";
 
 
-const Card = ({bg, heading, image, redirect, setIsLoginClick, value }) => {
+const Card = ({bg, heading, image, redirect, setIsLoginClick, value, isNotLikeVideo, setIsNotLikeVideo }) => {
   const router = useRouter();
 
   return (
     <p
-    className={`block max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 relative group transition-transform transform hover:scale-110 lg:w-[25%] w-[90%] lg:h-[250px] cursor-pointer`}
+    className={`block filter ${isNotLikeVideo && value === 'contact' ? 'brightness-100 bounce2' : isNotLikeVideo && value !== 'contact'  ? 'brightness-50': '' } max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 relative group transition-transform transform hover:scale-110 lg:w-[25%] w-[90%] lg:h-[250px] cursor-pointer`}
     onClick={() => {
-      setIsLoginClick(value)
+      setIsLoginClick(value);
+      setIsNotLikeVideo(false);
+      const cardsSection = document.getElementById('videoButton');
+      if (cardsSection) {
+        cardsSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     }}
   >
     <div className="text-center h-full">

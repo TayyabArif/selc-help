@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import VideoModal from "./VideoModal";
 
-const LoginGuideCard = ({data}) => {
+const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const openModal = () => {
     setModalOpen(true);
@@ -11,10 +11,11 @@ const LoginGuideCard = ({data}) => {
   const closeModal = () => {
     setModalOpen(false);
   };
+
   return (
-    <div class="lg:w-[270px] md:w-[370px] w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
+    <div class=" md:w-[370px] w-full bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 h-full">
       <a href="#" className="h-[50%]">
-        <img src={data?.image} alt="guide" className="lg:h-[250px] h-[300px] w-full"/>
+        <img src={data?.image} alt="guide" className="lg:h-[250px] h-[300px] w-full rounded-tl-lg rounded-tr-lg "/>
       </a>
       <div class="p-5 h-[50%]">
         <div className="h-[80px] text-center flex justify-center items-center">
@@ -31,7 +32,7 @@ const LoginGuideCard = ({data}) => {
             <Image src="/arrowRight.svg" alt="arrowRight" width={14} height={14} className="ml-2"/>
           </p>
         </div>
-        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} />
+        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
       </div>
     </div>
   );

@@ -7,33 +7,33 @@ import SuccessModal from '@/components/SuccessModal';
 
 export default function Home() {
   const loginStep = {
-    heading: "How to Login & set Password",
-    image: "/steps/login-vector.jpeg",
+    heading: "Login Made Easy ",
+    image: "/steps/login.png",
     video: "/steps/login.mp4"
   };
   const securityQuestion = {
-    heading: "Security Question & SIN",
-    image: "/steps/security-vector.jpeg",
+    heading: "Secure Profile",
+    image: "/steps/secure-profile.png",
     video: "/steps/secure-profile.mp4"
   };
   const updateProfile = {
-    heading: "Update profile",
-    image: "/steps/update-vector1.jpeg",
+    heading: "Update your Profile",
+    image: "/steps/update.png",
     video: "/steps/profile.mp4"
   };
   const portalUse = {
-    heading: "Navigate through student portal",
-    image: "/steps/portal-vector.jpeg",
+    heading: "Navigating the Student Portal",
+    image: "/steps/portal.png",
     video: "/steps/portal.mp4"
   };
   const officeloginStep = {
-    heading: "Login through MS",
+    heading: "Boost Productivity with Office 365",
     steps: [
       "Microsoft 365 is our cloud-powered productivity platform. ​​",
       "The latest productivity apps, such as Microsoft Teams, Word, Excel, PowerPoint, Outlook, OneDrive, and so much more.​",
       "The ability to install on PCs, Macs, tablets, and phones"
     ],
-    image: "/steps/mslogin1.jpeg",
+    image: "/steps/mslogin1.png",
     video: "/steps/msoffice.mp4"
   };
   const [formData, setFormData] = useState({
@@ -51,6 +51,7 @@ const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
 
 const handleSubmit = async (event) => {
 event.preventDefault();
+setIsClick(true)
 console.log('formData is ', formData)
 try {
   const response = await fetch('/api/contact', {
@@ -63,12 +64,12 @@ try {
 
   if (response.ok) {
     setIsSuccessModalOpen(true);
-
-    // Optionally reset form data here
   } else {
     setSubmissionStatus('error');
   }
+  setIsClick(false)
 } catch (error) {
+  setIsClick(false)
   console.error('Error sending email:', error);
   setSubmissionStatus('error');
 }
@@ -83,6 +84,8 @@ setIsSuccessModalOpen(false);
 const [isNextClick, setIsNextClick] = useState(false)
 const [isClose, setIsClose] = useState(true);
   const [isloginClick, setIsLoginClick] = useState("");
+  const [isNotLikeVideo, setIsNotLikeVideo] = useState(false);
+  const [isClick, setIsClick] = useState(false);
   return (
     <Layout>
       <div className="flex w-full flex-col bg-white h-full">
@@ -97,7 +100,9 @@ const [isClose, setIsClose] = useState(true);
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-full justify-center mt-14 mb-8">
+        <div id="cardsSection">
+        </div>
+        <div id="cardsSection" className="flex flex-col w-full justify-center mt-14 mb-8 ">
           <div className="flex lg:flex-row flex-col gap-5 w-full justify-center lg:items-start items-center">
             <Card
               bg="card1"
@@ -106,6 +111,8 @@ const [isClose, setIsClose] = useState(true);
               image="/identification.svg"
               setIsLoginClick={setIsLoginClick}
               value="login"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
             />
             <Card
               bg="card2"
@@ -114,6 +121,8 @@ const [isClose, setIsClose] = useState(true);
               image="/microsoft.svg"
               setIsLoginClick={setIsLoginClick}
               value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
             />
             <Card
               bg="card3"
@@ -122,20 +131,23 @@ const [isClose, setIsClose] = useState(true);
               image="/hand.svg"
               setIsLoginClick={setIsLoginClick}
               value="contact"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
             />
           </div>
         </div>
+        <div id="videoButton"></div>
         {isloginClick === "login" &&
           <div className='px-10 flex md:flex-wrap md:flex-row flex-col items-center justify-center w-full mt-5 gap-5 my-5'>
-            <LoginGuideCard data={loginStep} />
-            <LoginGuideCard data={securityQuestion}/>
-            <LoginGuideCard data={updateProfile}/>
-            <LoginGuideCard data={portalUse}/>
+            <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
+            <LoginGuideCard data={securityQuestion} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+            <LoginGuideCard data={updateProfile} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+            <LoginGuideCard data={portalUse} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
           </div>
         }
         {isloginClick === "ms" &&
         <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
-        <LoginGuideCard data={officeloginStep} />
+        <LoginGuideCard data={officeloginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
         </div>
         }
         {isloginClick === "contact" &&
@@ -179,7 +191,15 @@ const [isClose, setIsClose] = useState(true);
                       <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                       <textarea id="message" rows="6" name='message' value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                   </div>
-                  <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                  <button type="submit" disabled={isClick} className={`flex items-center gap-2 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${isClick ? 'bg-opacity-50': ''}`}>
+                    Send message
+                    {isClick &&
+                    <svg aria-hidden="true" class="w-6 h-6 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-gray-400" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                      <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                    </svg>
+                    }
+                    </button>
                   </>
                 }
               </form>

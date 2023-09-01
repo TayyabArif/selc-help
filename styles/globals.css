@@ -49,7 +49,6 @@ ul.bullets {
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 8px;
-  padding: 20px;
 }
 
 .overlay {
@@ -67,8 +66,43 @@ ul.bullets {
 .close-button {
   position: absolute;
   top: 5px;
-  right: 0px;
+  right: 3px;
   border: none;
   background: none;
   cursor: pointer;
+  z-index: 10;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.box {
+  --border-size: 2px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(from var(--border-angle), white, white 50%),
+    conic-gradient(from var(--border-angle), transparent 20%, rgb(77, 255, 0), rgb(243, 68, 103));
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 8s linear infinite;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
