@@ -16,7 +16,8 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
   const handleFeedback = (liked) => {
     setLikedVideo(liked);
     setIsNotLikeVideo(liked);
-    setIsLoginClick("contact")
+    if (!liked)
+      setIsLoginClick("contact")
     onClose();
     setShowFeedbackPopup(false);
     const cardsSection = document.getElementById('cardsSection');
@@ -43,7 +44,7 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
       <video
         controls
         autoPlay
-        className='h-[500px] w-[500px]'
+        className='rounded-md'
         onEnded={handleVideoEnd}
         ref={videoRef}
       >
