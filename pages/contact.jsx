@@ -51,7 +51,7 @@ const contact = () => {
   const [isClose, setIsClose] = useState(true);
   return (
     <Layout>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white">
         <div className="bg-[url('/contact.png')] bg-no-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply h-[500px] flex">
             <div className="px-4 lg:pt-24 pt-8 pb-10 lg:pb-80 mx-auto max-w-screen-sm text-center lg:px-6 flex flex-col items-center justify-center">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Contact Us</h2>

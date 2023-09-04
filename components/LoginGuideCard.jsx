@@ -13,13 +13,13 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
   };
 
   return (
-    <div class=" md:w-[370px] w-full bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 h-full">
+    <div class=" md:w-[370px] w-full bg-white border border-gray-200 rounded-lg shadow-lg h-full">
       <a href="#" className="h-[50%]">
         <img src={data?.image} alt="guide" className="lg:h-[250px] h-[300px] w-full rounded-tl-lg rounded-tr-lg "/>
       </a>
       <div class="p-5 h-[50%]">
         <div className="h-[80px] text-center flex justify-center items-center">
-          <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white my-5">
+          <h5 class="text-2xl font-bold tracking-tight text-gray-900 my-5">
             {data?.heading}
           </h5>
         </div>

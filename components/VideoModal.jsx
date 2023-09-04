@@ -54,7 +54,7 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
       {showFeedbackPopup && (
         <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md">
           <div className="bg-white px-4 py-8 rounded w-[90%] border border-gray-300 shadow-lg box">
-            <p className="mb-2 text-center text-xl">Is this Video helpful?  </p>
+            <p className="text-gray-800 mb-2 text-center text-xl">Is this Video helpful?  </p>
             <div className='flex justify-center space-x-4'>
               <button
                 className="px-4 py-2 rounded-lg bg-green-500 text-white transition duration-300 hover:shadow-md hover:scale-105"

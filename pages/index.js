@@ -152,17 +152,17 @@ const [isClose, setIsClose] = useState(true);
         }
         {isloginClick === "contact" &&
           <div className="py-6 px-4 mx-auto min-w-[80%] max-w-screen-xl sm:py-8 lg:px-6 ">
-              <form onSubmit={handleSubmit}  className="flex flex-col gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-[#fcfafc] rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700">
+              <form onSubmit={handleSubmit}  className="flex flex-col gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-[#fcfafc] rounded-lg border border-gray-200 shadow-sm lg:mb-28">
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-900 placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Bonnie" required />
-                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="2301122" required />
+                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Bonnie" required />
+                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="2301122" required />
                   </div>
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
-                      <input type="number" id="phone-number" name='phoneNumber' value={formData.phoneNumber} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="+12 345 6789" required />
+                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-500" placeholder="name@flowbite.com" required />
+                      <input type="number" id="phone-number" name='phoneNumber' value={formData.phoneNumber} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="+12 345 6789" required />
                   </div>
 
-                  <select id="countries" name='department' onChange={handleChange} class="bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                  <select id="countries" name='department' onChange={handleChange} class="bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                     <option selected>Choose your Department to cintact</option>
                     <option value="US">Marketer</option>
                     <option value="CA">Student Services</option>
@@ -189,7 +189,7 @@ const [isClose, setIsClose] = useState(true);
                   }
                   <div className="sm:col-span-2">
                       <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                      <textarea id="message" rows="6" name='message' value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                      <textarea id="message" rows="6" name='message' value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                   </div>
                   <button type="submit" disabled={isClick} className={`flex items-center gap-2 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${isClick ? 'bg-opacity-50': ''}`}>
                     Send message

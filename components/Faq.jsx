@@ -17,16 +17,6 @@ const Faq = () => {
   const [loading, setLoading] = useState(false);
   const [rednerLoader, setRenderLoader] = useState(false);
 
-  // const fadeIn = useSpring({
-  //   opacity: visible ? 1 : 0,
-  //   transform: visible ? `scale(1)` : `scale(1.1)`,
-  //   display: visible ? "block" : "none",
-  //   config: {
-  //     delay: 800,
-  //     duration: 400,
-  //   },
-  // });
-
   const handleGetStartClick = () => {
     if (localStorage.getItem("isUserRegistered") !== null) {
       navigate.push("/dashboard");
@@ -42,7 +32,7 @@ const Faq = () => {
       >
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-normalBlue ">
+            <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-[#0D659D] ">
               Frequently Asked <span className="text-gray-900">Questions</span>
             </h2>
             <p className="mt-4 text-base font-semibold leading-7 text-gray-600 lg:text-xl  lg:mt-6 lg:leading-8">
