@@ -26,13 +26,13 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
         <div className="flex w-full justify-center h-[25%]">
           <p
             onClick={openModal}
-            class="inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-center text-white bg-primary rounded-lg focus:ring-4 focus:outline-none dark:bg-primary h-[20%] cursor-pointer"
+            class="inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-center text-white bg-branding rounded-lg focus:ring-4 focus:outline-none h-[20%] cursor-pointer"
           >
             Watch Video
             <Image src="/arrowRight.svg" alt="arrowRight" width={14} height={14} className="ml-2"/>
           </p>
         </div>
-        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
+        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} redirect={data?.redirect} text={data.text} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
       </div>
     </div>
   );

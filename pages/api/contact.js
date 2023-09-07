@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
-      const { firstName, lastName, email, phoneNumber, studentID, program, message } = req.body;
+      const {studentID,fullName,email,message, department } = req.body;
       const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -12,16 +12,13 @@ export default async function handler(req, res) {
         },
       });
       const mailOptions = {
-        from: 'tayyablefty786@gmail.com',
-        to: 'Itsupport@selcedu.com',
-        subject: 'New Contact Form Submission',
+        from: email,
+        to: department,
+        subject: 'SELC help Desk',
         html: `
-          <p>First Name: ${firstName}</p>
-          <p>Last Name: ${lastName}</p>
+          <p>First Name: ${fullName}</p>
           <p>Email: ${email}</p>
-          <p>Phone Number: ${phoneNumber}</p>
           <p>Student ID: ${studentID}</p>
-          <p>Program: ${program}</p>
           <p>Message: ${message}</p>
         `,
       };

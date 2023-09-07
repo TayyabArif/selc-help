@@ -12,8 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '5xl': '1800px',
+        '4xl': '1600px',
+        '3xl': '1300px',
+      },
       colors: {
-        primary: "#d77707"
+        primary: "#f15a29",
+        branding: "#f15a29",
       },
       fontFamily: {
         custom: ['D3Euronism', 'sans'], // 'sans' is a fallback in case the font doesn't load

@@ -9,22 +9,30 @@ export default function Home() {
   const loginStep = {
     heading: "Login Made Easy ",
     image: "/steps/login.png",
-    video: "/steps/login.mp4"
+    video: "/steps/login.mp4",
+    redirect: "https://www.myselcedu.com/login/",
+    text: "Click link to visit login page"
   };
   const securityQuestion = {
     heading: "Secure Profile",
     image: "/steps/secure-profile.png",
-    video: "/steps/secure-profile.mp4"
+    video: "/steps/secure-profile.mp4",
+    redirect: "https://www.myselcedu.com/profile/setup/",
+    text: "Click link to add security questions"
   };
   const updateProfile = {
     heading: "Update your Profile",
     image: "/steps/update.png",
-    video: "/steps/profile.mp4"
+    video: "/steps/profile.mp4",
+    redirect: "https://www.myselcedu.com/profile/requests/?r=109",
+    text: "Click link to update the profile information"
   };
   const portalUse = {
     heading: "Navigating the Student Portal",
-    image: "/steps/portal.png",
-    video: "/steps/portal.mp4"
+    image: "/steps/portal1.png",
+    video: "/steps/portal.mp4",
+    redirect: "https://www.myselcedu.com/",
+    text: "Click link to visit landing page"
   };
   const officeloginStep = {
     heading: "Boost Productivity with Office 365",
@@ -34,7 +42,9 @@ export default function Home() {
       "The ability to install on PCs, Macs, tablets, and phones"
     ],
     image: "/steps/mslogin1.png",
-    video: "/steps/msoffice.mp4"
+    video: "/steps/msoffice.mp4",
+    redirect: "https://www.office.com/",
+    text: "Click link to visit login page"
   };
   const [formData, setFormData] = useState({
     fullName: '',
@@ -75,6 +85,7 @@ try {
 }
 };
 const handleChange = (e) => {
+  console.log('===========',e.target.name, e.target.value)
 setFormData({ ...formData, [e.target.name]: e.target.value });
 };
 const handleCloseModal = () => {
@@ -116,7 +127,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card2"
-              heading="MS student login help"
+              heading="MS office student login help"
               subhead="Please follow our step by step guide"
               image="/microsoft.svg"
               setIsLoginClick={setIsLoginClick}
@@ -154,21 +165,20 @@ const [isClose, setIsClose] = useState(true);
           <div className="py-6 px-4 mx-auto min-w-[80%] max-w-screen-xl sm:py-8 lg:px-6 ">
               <form onSubmit={handleSubmit}  className="flex flex-col gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-[#fcfafc] rounded-lg border border-gray-200 shadow-sm lg:mb-28">
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Bonnie" required />
-                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="2301122" required />
+                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Full Name" required />
+                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Student ID" required />
                   </div>
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-500" placeholder="name@flowbite.com" required />
-                      <input type="number" id="phone-number" name='phoneNumber' value={formData.phoneNumber} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="+12 345 6789" required />
+                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-500" placeholder="Enter your email" required />
                   </div>
 
-                  <select id="countries" name='department' onChange={handleChange} class="bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <select id="countries" name='department' onChange={handleChange} class="bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                     <option selected>Choose your Department to cintact</option>
-                    <option value="US">Marketer</option>
-                    <option value="CA">Student Services</option>
-                    <option value="FR">Registrar</option>
-                    <option value="DE">Co-op</option>
-                    <option value="DE">IT</option>
+                    <option value="tayyab.dev12@gmail.com">Marketer</option>
+                    <option value="selcmarketing@selcedu.com">Student Services</option>
+                    <option value="selcregistration@selcedu.com">Registrar</option>
+                    <option value="itsupporthelpdesk@selcedu.com">Co-op</option>
+                    <option value="itsupporthelpdesk@selcedu.com">IT</option>
                   </select>
                   <div className='w-full cursor-pointer'>
                   <p className="w-full py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" onClick={() => setIsNextClick(!isNextClick)}>

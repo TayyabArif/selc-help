@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 Modal.setAppElement('#__next'); // Set the app root element
 
-const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick }) => {
+const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick, redirect, text }) => {
   const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
   const [likedVideo, setLikedVideo] = useState(null);
   const videoRef = useRef(null);
@@ -51,6 +51,10 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
         <source src={video} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
+      <div className='text-gray-800 absolute w-full flex flex-col top-[102%] bg-white rounded-md p-2 justify-center items-center'>
+        <p className='text-lg font-bold'>{text}</p>
+        <a href={redirect} target="_blank" rel="noopener noreferrer" className="text-primary text-sm">{redirect}</a>
+      </div>
       {showFeedbackPopup && (
         <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md">
           <div className="bg-white px-4 py-8 rounded w-[90%] border border-gray-300 shadow-lg box">

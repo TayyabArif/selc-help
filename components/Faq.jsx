@@ -10,30 +10,19 @@ const Faq = () => {
   const [question4, setQuestion4] = useState(false);
   const [question5, setQuestion5] = useState(false);
   const [question6, setQuestion6] = useState(false);
+  const [question7, setQuestion7] = useState(false);
   const [sendRequest, setSendRequest] = useState(false);
 
-  const navigate = useRouter();
-  const [visible, setVisible] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [rednerLoader, setRenderLoader] = useState(false);
-
-  const handleGetStartClick = () => {
-    if (localStorage.getItem("isUserRegistered") !== null) {
-      navigate.push("/dashboard");
-    } else {
-      setVisible(() => true);
-    }
-  };
   return (
     <>
       <section
-        className="w-full mt-8 py-12 bg-gray-50 sm:py-16 lg:py-14 xl:py-14"
+        className="w-full mt-8 py-12 bg-gray-50 sm:py-16 lg:py-14 xl:py-14 mb-32"
         id="target_faq"
       >
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-[#0D659D] ">
-              Frequently Asked <span className="text-gray-900">Questions</span>
+            <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-branding ">
+              Frequently Asked <span className="text-gray-700">Questions</span>
             </h2>
             <p className="mt-4 text-base font-semibold leading-7 text-gray-600 lg:text-xl  lg:mt-6 lg:leading-8">
               Ask everything you need to know about our products and services.
@@ -48,7 +37,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Is FreeAdCopy actually free?{" "}
+                    Q. Is SELC College a Designated Learning Intuition (DLI)? What is the DLI number for college.{" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -65,13 +54,13 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question1 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Yes. FreeAdCopy.com is 100% free forever.
+                    Yes, SELC College is a Designated Learning Institution and DLI number for college is
                   </p>
                 </div>
               </div>
@@ -84,8 +73,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Will the AI-generated copy feel 'robotic' or lack the
-                    creativity and nuance of human writing?
+                    Q. Is there orientation to SELC College.?
                   </span>
                   <span className="ml-4">
                     <Image
@@ -102,16 +90,13 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question2 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Nope. We’ve trained our AI to generate copy that's so
-                    human-like, it has outperformed some of the world's top
-                    copywriters. Expect conversational, emotionally resonant
-                    language that engages your audience.
+                  Yes, Orientation provides students with the opportunity to discover the university, become acquainted with the campus, interact with administrative personnel, and identify resources available for assistance when required. The primary objective of the orientation is to underscore our robust learning environment and support system for students. Please be aware that attendance at the New Student Orientation is compulsory for all incoming students, as successful completion is a prerequisite for enrolling in other courses.
                   </p>
                 </div>
               </div>
@@ -124,8 +109,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. How can your AI understand my biz as well as a human
-                    copywriter?
+                    Q.Does SELC college offer any accommodation assistance to its students?
                   </span>
                   <span className="ml-4">
                     <Image
@@ -142,17 +126,13 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question3 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Great question. Our solution is modeled on the strategy we
-                    use at our multi-million-dollar ad agency. We've identified
-                    the crucial variables (often just 3-4 keywords) that are
-                    needed to create world-class copy. You add those. The rest
-                    is generated by our AI model.
+                    Yes
                   </p>
                 </div>
               </div>
@@ -165,7 +145,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Do these ads actually work?{" "}
+                    Q. Does SELC offer any scholarships, rewards or grants to the students? {" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -182,14 +162,13 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question4 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Yes. Our AI-generated copy has already beaten ads written by
-                    some of the world's best copywriters.
+                  Yes, We provide an array of scholarships, awards, and grants accessible to both domestic and international students. To access a comprehensive list, along with the eligibility requirements and guidelines, please refer to our resources.
                   </p>
                 </div>
               </div>
@@ -202,8 +181,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Is the AI able to capture and maintain my brand's unique
-                    voice and tone throughout the ad copy?{" "}
+                    Q.  Does college offer any career advice or support to its students?{" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -220,14 +198,13 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question5 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Absolutely. Our system allows you to tweak and tailor the
-                    tone to your liking using a unique set of modifiers.
+                  Yes, our co-op department offers assistance to students to get ready for the job market.
                   </p>
                 </div>
               </div>
@@ -238,7 +215,7 @@ const Faq = () => {
                   className="flex items-center justify-between w-full px-6 py-5 text-base font-semibold text-left text-gray-900 sm:p-6"
                   onClick={() => setQuestion6(!question6)}
                 >
-                  <span className="w-[90%]"> Q. How do I get started? </span>
+                  <span className="w-[90%]"> Q. Are students eligible for work while attending college? </span>
                   <span className="ml-4">
                     <Image
                       src={
@@ -254,24 +231,54 @@ const Faq = () => {
                 </button>
               </h3>
               <div
-                className={`overflow-hidden transition-max-height duration-1000 ${
+                className={`overflow-hidden transition-max-height ${
                   question6 ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-black`}>
-                    Just{" "}
-                    <span
-                      className="cursor-pointer text-[#0000FF]"
-                      onClick={() => {
-                        document.getElementById("target_input").focus();
-                        window.scrollTo(10, 10);
-                      }}
+                  International students studying in Canada can work up to 20 hours per week if they are enrolled in a full-time program lasting at least six months. For more information, please visit:{" "}
+                    <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html" target="_blank" rel="noopener noreferrer" className="text-primary"
                     >
-                      click this link
-                    </span>{" "}
-                    to start generating world-class copy (almost) instantly for
-                    FREE!
+                      https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html
+                    </a>{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3>
+                <button
+                  className="flex items-center justify-between w-full px-6 py-5 text-base font-semibold text-left text-gray-900 sm:p-6"
+                  onClick={() => setQuestion7(!question7)}
+                >
+                  <span className="w-[90%]">
+                    {" "}
+                    Q. What mode of transportation is available for the students? {" "}
+                  </span>
+                  <span className="ml-4">
+                    <Image
+                      src={
+                        question7
+                          ? "/HomePage/subtractIcon.svg"
+                          : "/HomePage/addIcon.svg"
+                      }
+                      width={20}
+                      height={20}
+                      alt={question7 ? "Subtract Icon" : "Add Icon"}
+                    />
+                  </span>
+                </button>
+              </h3>
+              <div
+                className={`overflow-hidden transition-max-height ${
+                  question7 ? "max-h-96" : "max-h-0"
+                }`}
+              >
+                <div className="px-6 pb-6">
+                  <p className={`text-base text-gray-600`}>
+                  SELC College enjoys a prime location in the heart of Vancouver's downtown area, providing convenient access to the city's extensive public transportation network, including buses and SkyTrain stations. This central positioning ensures that students have easy and efficient commuting options to and from the college, making it highly accessible for those traveling from various parts of the city.
                   </p>
                 </div>
               </div>
