@@ -24,6 +24,17 @@ const Footer = () => {
   ]
   return (
     <div className='flex relative md:flex-row flex-col md:gap-0 gap-5 footer px-10 py-8 justify-between'>
+      <svg
+      className="absolute -top-[5%] left-0 w-full -mt-5 sm:-mt-10 h-16 text-deep-purple-accent-400"
+      preserveAspectRatio="none"
+      viewBox="0 0 1440 54"
+    >
+
+      <path
+        fill="#FF7B26"
+        d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
+      />
+    </svg>
       <div className='flex flex-col md:w-[50%] w-full pt-10'>
         <img src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-horizontal-transparent-white.png"
           alt="logo" className='md:w-[50%] w-full md:ml-0 -ml-4 cursor-pointer' onClick={() => router.push('/')}/>
