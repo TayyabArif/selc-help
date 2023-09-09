@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import LoginGuideCard from '@/components/LoginGuideCard'
 import React, { useEffect, useState } from "react";
 import SuccessModal from '@/components/SuccessModal';
+import Hero from "@/components/Hero";
 
 export default function Home() {
   const loginStep = {
@@ -85,7 +86,6 @@ try {
 }
 };
 const handleChange = (e) => {
-  console.log('===========',e.target.name, e.target.value)
 setFormData({ ...formData, [e.target.name]: e.target.value });
 };
 const handleCloseModal = () => {
@@ -99,22 +99,24 @@ const [isClose, setIsClose] = useState(true);
   const [isClick, setIsClick] = useState(false);
   return (
     <Layout>
-      <div className="flex w-full flex-col bg-white h-full">
-        <div
-          className="flex flex-col justify-center items-center bg-cover bg-center w-full h-[350px]"
-          style={{ backgroundImage: `url("/home-bg.png")`}}
-        >
-           <div className="absolute inset-0 bg-black opacity-40 w-full h-[350px]" />
-          <div className="text-center transition-transform transform hover:scale-110 duration-1000 w-full flex flex-col">
-            <p className="text-white font-bold md:text-[55px] text-[45px] font-custom">
-            Welcome to Student Help Desk
-            </p>
-          </div>
+      <div className="flex w-full flex-col bg-white h-full mt-20">
+        <Hero />
+        <div id="cardsSection1" className="h-10">
         </div>
         <div id="cardsSection">
         </div>
-        <div id="cardsSection" className="flex flex-col w-full justify-center mt-14 mb-8 ">
-          <div className="flex lg:flex-row flex-col gap-5 w-full justify-center lg:items-start items-center">
+        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-20 ${isloginClick ? "mb-0" : "mb-20"}`}>
+          <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
+            <Card
+              bg="card1"
+              heading="Student portal"
+              subhead="Please follow our step by step guide"
+              image="/identification.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="login"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
             <Card
               bg="card1"
               heading="Student portal"
@@ -135,6 +137,16 @@ const [isClose, setIsClose] = useState(true);
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
+             <Card
+              bg="card2"
+              heading="MS office student login help"
+              subhead="Please follow our step by step guide"
+              image="/microsoft.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
             <Card
               bg="card3"
               heading="Can’t find what you’re looking for? Click here."
@@ -145,9 +157,29 @@ const [isClose, setIsClose] = useState(true);
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
+            <Card
+              bg="card3"
+              heading="Can’t find what you’re looking for? Click here."
+              subhead="Feel free to contact us"
+              image="/hand.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="contact"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card1"
+              heading="Student portal"
+              subhead="Please follow our step by step guide"
+              image="/identification.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="login"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
           </div>
         </div>
-        <div id="videoButton"></div>
+        <div id="videoButton" className="h-20"></div>
         {isloginClick === "login" &&
           <div className='px-10 flex md:flex-wrap md:flex-row flex-col items-center justify-center w-full mt-5 gap-5 my-5'>
             <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />

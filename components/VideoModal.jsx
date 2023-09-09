@@ -11,6 +11,11 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
 
   const handleVideoEnd = () => {
     setShowFeedbackPopup(true);
+
+    const pdfDownloadLink = document.getElementById("pdfDownloadLink");
+    if (pdfDownloadLink) {
+      pdfDownloadLink.click();
+    }
   };
 
   const handleFeedback = (liked) => {
@@ -41,6 +46,12 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
       <Image src="/close.svg" alt="Close" width={24} height={24} />
     </button>
     <div className="aspect-w-16 aspect-h-9 relative"> {/* Added relative class */}
+      <a
+        href="/test.pdf"
+        download="test.pdf" // Specify the desired file name here
+        id="pdfDownloadLink" // Add an ID to the anchor element for easy access
+        style={{ display: "none" }} // Hide the anchor element
+      />
       <video
         controls
         autoPlay

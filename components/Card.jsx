@@ -7,7 +7,7 @@ const Card = ({bg, heading, image, redirect, setIsLoginClick, value, isNotLikeVi
   const router = useRouter();
 
   return (
-    <p
+    <div
     className={`block filter ${isNotLikeVideo && value === 'contact' ? 'brightness-100 bounce2' : isNotLikeVideo && value !== 'contact'  ? 'brightness-50': '' } max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative group transition-transform transform hover:scale-110 lg:w-[25%] w-[90%] lg:h-[250px] cursor-pointer`}
     onClick={() => {
       setIsLoginClick(value);
@@ -30,7 +30,7 @@ const Card = ({bg, heading, image, redirect, setIsLoginClick, value, isNotLikeVi
     <div className="transition-transform transform origin-right opacity-0 group-hover:opacity-100 group-hover:scale-105 absolute right-6 top-1/2 -translate-y-1/2">
     <Image src="/rightTag.svg" alt="arrow" width={24} height={24} />
     </div>
-  </p>
+  </div>
   )
 }
 
