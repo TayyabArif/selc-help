@@ -1,0 +1,53 @@
+{
+  "header": {
+    "home": "Ie",
+    "help": "Herupu",
+    "faq": "Yokuarushitsumon",
+    "portal": "Gakusei yūbin e"
+  },
+  "hero": {
+    "welcomeMessage": "<strong>SELC</strong> gakusei herupu desuku e yōkoso.",
+    "desc": "Kokode wa, gakusei pōtaru no shiyō hōhō o dankai-teki ni setsumei shimasu.",
+    "button": "Hajimemashou"
+  },
+  "mainCards": {
+    "portal": "Gakusei pōtaru",
+    "office": "MS ofisu gakusei roguin no herupu",
+    "contact": "Sagashite iru mono ga mitsukarimasen ka? Kokowokurikku"
+  },
+  "portalCards": {
+    "step1": "Roguin ga kantan ni",
+    "step2": "Anzen'na Purofairu",
+    "step3": "Purofīru o kōshin suru",
+    "step4": "Gakusei pōtaru no sōsa",
+    "officeStep": "Ofisu 365 de shōsansei o kōjō",
+    "watchButton": "Bideo o miru",
+    "link1": "Rinkuwokurikku shite roguinpēji ni akusesu shimasu",
+    "link2": "Rinkuwokurikku shite sekyuriti no shitsumon o tsuika shimasu",
+    "link3": "Rinkuwokurikku shite purofīru jōhō o kōshin shimasu",
+    "link4": "Rinkuwokurikku shite randingu pēji ni akusesu shimasu"
+  },
+  "faq": {
+    "heading1": "Yokuarushitsumon",
+    "heading2": "Shitsumon",
+    "subheading": "Tōsha ni tsuite shiritai koto wa subete shitsumon shite kudasai",
+    "q1": "Q. SELC karejji wa, Designated ran'ningu Intuition (DLI)desu ka? Daigaku no DLI bangō wa nanidesu ka.",
+    "ans1": "Hai, SELC karejji wa shitei gakushū kikandeari, karejji no DLI bangō wa",
+    "q2": "Q. SELC karejji e no orientēshon wa arimasu ka?",
+    "ans2": "Hai, orientēshon wa gakusei ni daigaku o hakken shi, kyanpasu o shiri, kanri tantōsha to kōryū shi, hitsuyōniōjite shien ga uke rareru risōsu o kakunin suru kikai o teikyō shimasu. Orientēshon no omona mokuteki wa, gakusei no tame no watashitachi no kenrōna gakushū kankyō to sapōtoshisutemu o kyōchō suru kotodesu. Hoka no kōsu ni tōroku suru ni wa shūryō ga hissu jōkendearu tame, shin'nyūsei orientēshon e no shusseki wa subete no shin'nyūsei ni gimudzuke rarete iru koto ni chūi shite kudasai.",
+    "q3": "Q.Does SELC college offer any accommodation assistance to its students?",
+    "ans3": "Hai",
+    "q4": "Q. SELC wa gakusei ni shōgakkin, hōshō-kin, josei-kin o teikyō shite imasu ka?",
+    "ans4": "Hai. Kokunai gakusei to ryūgakusei no ryōhō ga riyō dekiru, samazamana shōgakkin,-shō, hojokin o teikyō shite imasu. Shikaku yōken oyobi gaidorain to tomoni hōkatsu-tekina risuto ni akusesu suru ni wa, risōsu o sanshō shite kudasai.",
+    "q5": "Q. Gakusei wa dono yōna kōtsū shudan o riyō dekimasu ka?",
+    "ans5": "SELC karejji wa bankūbā no dauntaun chūshin-bu no ichi-tōchi ni ari, basu ya sukaitorein no eki nado shinai no kōhan'na kōkyō kōtsūkikan e no akusesu ga benridesu. Kono chūshin-tekina ichi ni yori, gakusei wa daigaku e no ōfuku ga kantan katsu kōritsu-teki ni sentaku dekiru yō ni nari, shinai no samazamana basho kara ryokō suru gakusei ni totte hijō ni akusesu shi yasuku narimashita.",
+    "q6": "Q. Gakusei wa daigaku ni kayoinagara hataraku shikaku wa arimasu ka?",
+    "ans6": "Kanada de benkyō suru ryūgakusei wa, sukunakutomo 6-kagetsu tsudzuku furutaimu puroguramu ni tōroku shite iru baai, shū ni saidai 20-jikan hataraku koto ga dekimasu. Shōsai ni tsuite wa, ika o goran kudasai.",
+    "q7": "Q. Daigaku wa gakusei ni kyaria ni kansuru adobaisu ya sapōto o teikyō shite imasu ka?",
+    "ans7": "Hai, watashitachi no seikyō bumon wa gakusei ga shūshoku ichiba ni mukete junbi o totonoeru tame no shien o teikyō shite imasu."
+  },
+  "footer": {
+    "heading" : "Renrakusen jōhō"
+  }
+
+}

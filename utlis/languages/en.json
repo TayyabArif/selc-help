@@ -1,0 +1,53 @@
+{
+  "header": {
+    "home": "Home",
+    "help": "Help",
+    "faq": "FAQ",
+    "portal": "Go To Student Postal"
+  },
+  "hero": {
+    "welcomeMessage": "Welcome to <strong>SELC</strong> student Help Desk.",
+    "desc": "We are here to provide you step by step guide of how to use the student portal.",
+    "button": "Get Started"
+  },
+  "mainCards": {
+    "portal": "Student portal",
+    "office": "MS office student login help",
+    "contact": "Can’t find what you’re looking for? Click here"
+  },
+  "portalCards": {
+    "step1": "Login Made Easy",
+    "step2": "Secure Profile",
+    "step3": "Update your Profile",
+    "step4": "Navigating the Student Portal",
+    "officeStep": "Boost Productivity with Office 365",
+    "watchButton": "Watch Video",
+    "link1": "Click link to visit login page",
+    "link2": "Click link to add security questions",
+    "link3": "Click link to update the profile information",
+    "link4": "Click link to visit landing page"
+  },
+  "faq": {
+    "heading1": "Frequently Asked",
+    "heading2": "Questions",
+    "subheading": "Ask everything you need to know about us",
+    "q1": "Q. Is SELC College a Designated Learning Intuition (DLI)? What is the DLI number for college.",
+    "ans1": "Yes, SELC College is a Designated Learning Institution and DLI number for college is",
+    "q2": "Q. Is there orientation to SELC College.?",
+    "ans2": "Yes, Orientation provides students with the opportunity to discover the university, become acquainted with the campus, interact with administrative personnel, and identify resources available for assistance when required. The primary objective of the orientation is to underscore our robust learning environment and support system for students. Please be aware that attendance at the New Student Orientation is compulsory for all incoming students, as successful completion is a prerequisite for enrolling in other courses.",
+    "q3": "Q.Does SELC college offer any accommodation assistance to its students?",
+    "ans3": "Yes",
+    "q4": "Q. Does SELC offer any scholarships, rewards or grants to the students?",
+    "ans4": "Yes, We provide an array of scholarships, awards, and grants accessible to both domestic and international students. To access a comprehensive list, along with the eligibility requirements and guidelines, please refer to our resources.",
+    "q5": "Q. What mode of transportation is available for the students?",
+    "ans5": "SELC College enjoys a prime location in the heart of Vancouver's downtown area, providing convenient access to the city's extensive public transportation network, including buses and SkyTrain stations. This central positioning ensures that students have easy and efficient commuting options to and from the college, making it highly accessible for those traveling from various parts of the city.",
+    "q6": "Q. Are students eligible for work while attending college?",
+    "ans6": "International students studying in Canada can work up to 20 hours per week if they are enrolled in a full-time program lasting at least six months. For more information, please visit:",
+    "q7": "Q. Does college offer any career advice or support to its students?",
+    "ans7": "Yes, our co-op department offers assistance to students to get ready for the job market."
+  },
+  "footer": {
+    "heading" : "Contact Info"
+  }
+
+}

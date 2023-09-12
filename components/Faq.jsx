@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-// import { useSpring, animated } from "react-spring";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Faq = () => {
+  const { selectedLanguage } = useLanguage();
+  const translations = require(`../utlis/languages/${selectedLanguage}.json`);
   const [question1, setQuestion1] = useState(false);
   const [question2, setQuestion2] = useState(false);
   const [question3, setQuestion3] = useState(false);
@@ -22,10 +24,10 @@ const Faq = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-branding ">
-              Frequently Asked <span className="text-gray-700">Questions</span>
+              {translations.faq.heading1} <span className="text-gray-700">{translations.faq.heading2}</span>
             </h2>
             <p className="mt-4 text-base font-semibold leading-7 text-gray-600 lg:text-xl  lg:mt-6 lg:leading-8">
-              Ask everything you need to know about our products and services.
+              {translations.faq.subheading}
             </p>
           </div>
           <div className="max-w-5xl mx-auto mt-12 overflow-hidden border border-gray-200 divide-y divide-gray-200 sm:mt-16 rounded-xl">
@@ -37,7 +39,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Is SELC College a Designated Learning Intuition (DLI)? What is the DLI number for college.{" "}
+                    {translations.faq.q1}{" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -60,7 +62,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Yes, SELC College is a Designated Learning Institution and DLI number for college is
+                  {translations.faq.ans1}
                   </p>
                 </div>
               </div>
@@ -73,7 +75,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Is there orientation to SELC College.?
+                    {translations.faq.q2}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -96,7 +98,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                  Yes, Orientation provides students with the opportunity to discover the university, become acquainted with the campus, interact with administrative personnel, and identify resources available for assistance when required. The primary objective of the orientation is to underscore our robust learning environment and support system for students. Please be aware that attendance at the New Student Orientation is compulsory for all incoming students, as successful completion is a prerequisite for enrolling in other courses.
+                  {translations.faq.ans2}
                   </p>
                 </div>
               </div>
@@ -109,7 +111,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q.Does SELC college offer any accommodation assistance to its students?
+                    {translations.faq.q3}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -132,7 +134,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                    Yes
+                  {translations.faq.ans3}
                   </p>
                 </div>
               </div>
@@ -145,7 +147,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. Does SELC offer any scholarships, rewards or grants to the students? {" "}
+                    {translations.faq.q4} {" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -168,7 +170,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                  Yes, We provide an array of scholarships, awards, and grants accessible to both domestic and international students. To access a comprehensive list, along with the eligibility requirements and guidelines, please refer to our resources.
+                  {translations.faq.ans4}
                   </p>
                 </div>
               </div>
@@ -181,7 +183,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q.  Does college offer any career advice or support to its students?{" "}
+                    {translations.faq.q5}{" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -204,7 +206,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                  Yes, our co-op department offers assistance to students to get ready for the job market.
+                  {translations.faq.ans5}
                   </p>
                 </div>
               </div>
@@ -215,7 +217,7 @@ const Faq = () => {
                   className="flex items-center justify-between w-full px-6 py-5 text-base font-semibold text-left text-gray-900 sm:p-6"
                   onClick={() => setQuestion6(!question6)}
                 >
-                  <span className="w-[90%]"> Q. Are students eligible for work while attending college? </span>
+                  <span className="w-[90%]"> {translations.faq.q6} </span>
                   <span className="ml-4">
                     <Image
                       src={
@@ -237,7 +239,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-black`}>
-                  International students studying in Canada can work up to 20 hours per week if they are enrolled in a full-time program lasting at least six months. For more information, please visit:{" "}
+                  {translations.faq.ans6}{" "}
                     <a
                       href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work.html" target="_blank" rel="noopener noreferrer" className="text-primary"
                     >
@@ -255,7 +257,7 @@ const Faq = () => {
                 >
                   <span className="w-[90%]">
                     {" "}
-                    Q. What mode of transportation is available for the students? {" "}
+                    {translations.faq.q7} {" "}
                   </span>
                   <span className="ml-4">
                     <Image
@@ -278,7 +280,7 @@ const Faq = () => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                  SELC College enjoys a prime location in the heart of Vancouver's downtown area, providing convenient access to the city's extensive public transportation network, including buses and SkyTrain stations. This central positioning ensures that students have easy and efficient commuting options to and from the college, making it highly accessible for those traveling from various parts of the city.
+                  {translations.faq.ans7}
                   </p>
                 </div>
               </div>

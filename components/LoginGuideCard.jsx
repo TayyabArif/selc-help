@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import VideoModal from "./VideoModal";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,6 +12,8 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
   const closeModal = () => {
     setModalOpen(false);
   };
+  const { selectedLanguage } = useLanguage();
+  const translations = require(`../utlis/languages/${selectedLanguage}.json`);
 
   return (
     <div class=" md:w-[370px] w-full bg-white border border-gray-200 rounded-lg shadow-lg h-full">
@@ -28,7 +31,7 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick}) => {
             onClick={openModal}
             class="inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-center text-white bg-branding rounded-lg focus:ring-4 focus:outline-none h-[20%] cursor-pointer"
           >
-            Watch Video
+            {translations.portalCards.watchButton}
             <Image src="/arrowRight.svg" alt="arrowRight" width={14} height={14} className="ml-2"/>
           </p>
         </div>

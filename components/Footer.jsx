@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 const Footer = () => {
+  const { selectedLanguage } = useLanguage();
+  const translations = require(`../utlis/languages/${selectedLanguage}.json`);
   const router = useRouter()
   const data = [
     {
@@ -58,7 +61,7 @@ const Footer = () => {
       </div>
       <div className='flex flex-col text-white md:w-[40%] w-full md:ml-10 md:mt-0 mt-5 pt-10'>
         <p className='md:text-[25px] text-[30px] mb-4'>
-          Contact Info
+        {translations.footer.heading}
         </p>
         <div className='flex flex-col gap-5'>
           {data?.map((item, index) => {

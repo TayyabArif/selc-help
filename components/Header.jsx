@@ -1,35 +1,8 @@
-// import React, { useState } from 'react'
-// import { useRouter } from 'next/router'
-
-// const Header = () => {
-//  const router = useRouter()
-//   return (
-//     <header className='w-full lg:block hidden'>
-//     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 w-full">
-//         <div class="flex justify-between items-center mx-auto">
-//             <p  class="flex items-center cursor-pointer">
-//                 <img src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-white.png" class="mr-3 h-6 sm:h-9" alt="Logo" onClick={() => router.push('/')}/>
-//             </p>
-//             <div class="relative flex items-center lg:order-2">
-//                 <a href="#" class="text-primary dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login Help</a>
-//                 <a href="#" class="text-primary dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">MS Login Help</a>
-//                 <a href="#" class="text-primary dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Contact</a>
-//             </div>
-//         </div>
-//     </nav>
-// </header>
-//   )
-// }
-
-// export default Header
-
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-// Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
-// import ButtonOutline from "../misc/ButtonOutline.";
-// import LogoVPN from "../../public/assets/Logo.svg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -39,6 +12,15 @@ const Header = () => {
       setScrollActive(window.scrollY > 20);
     });
   }, []);
+
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+
+  const handleChangeLanguage = (event) => {
+    const newLanguage = event.target.value;
+    setSelectedLanguage(newLanguage);
+  };
+  const translations = require(`../utlis/languages/${selectedLanguage}.json`);
+
   return (
     <>
       <header
@@ -51,7 +33,7 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center">
             <Image src="/selc-logo.png" alt="selc logo" width={170} height={170} />
           </div>
-          <ul className="hidden md:flex col-start-4 col-end-8 text-gray-500  items-center">
+          <ul className="hidden md:flex col-start-4 col-end-6 text-gray-500  items-center">
             <LinkScroll
               activeClass="active"
               to="about"
@@ -68,7 +50,7 @@ const Header = () => {
                   : " text-black-500 hover:text-primary a")
               }
             >
-              Home
+              {translations.header.home}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -86,7 +68,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a ")
               }
             >
-              Help
+               {translations.header.help}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -104,19 +86,32 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              FAQ
+              {translations.header.faq}
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="https://www.myselcedu.com/login/" target="_blank" rel="noopener noreferrer">
-            <button
-              className={
-                "py-3 lg:py-4 px-8 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none "
-              }
-            >
-              Go To Student Portal
-            </button>
-            </Link>
+          <div className="flex items-center gap-10 col-start-11 col-end-12">
+            <div className="col-start-11 col-end-12 font-medium flex justify-end items-center bg-orange-500 hover:bg-primary rounded-lg py-1.5 lg:py-1.5 px-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" className="w-6 h-6 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+              </svg>
+              <select value={selectedLanguage} onChange={handleChangeLanguage}  className="bg-orange-500 hover:bg-primary rounded-lg text-white px-2 py-1 lg:py-1">
+                <option value="en" className="text-white">English</option>
+                <option value="por">Portuguese</option>
+                <option value="kor">Korean</option>
+                <option value="jap">Japanese</option>
+              </select>
+            </div>
+            <div className="col-start-9 col-end-10 font-medium flex justify-end items-center">
+              <Link href="https://www.myselcedu.com/login/" target="_blank" rel="noopener noreferrer">
+              <button
+                className={
+                  "py-2 lg:py-2 px-6 text-white font-semibold rounded-lg bg-orange-500 hover:shadow-primary-md hover:bg-primary transition-all outline-none "
+                }
+              >
+                {translations.header.portal}
+              </button>
+              </Link>
+            </div>
           </div>
         </nav>
       </header>

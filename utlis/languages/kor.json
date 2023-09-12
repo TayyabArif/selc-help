@@ -1,0 +1,53 @@
+{
+  "header": {
+    "home": "jib",
+    "help": "dobda",
+    "faq": "jajuhaneun jilmun",
+    "portal": "hagsaeng upyeon-eulo idong"
+  },
+  "hero": {
+    "welcomeMessage": "<strong>SELC</strong> hagsaeng helpeu deseukeue osin geos-eul hwan-yeonghabnida.",
+    "desc": "ulineun hagsaeng poteol-eul sayonghaneun bangbeob-e daehan dangyebyeol gaideuleul jegonghagi wihae wassseubnida.",
+    "button": "sijaghada"
+  },
+  "mainCards": {
+    "portal": "hagsaeng poteol",
+    "office": "MS Office hagsaeng logeu-in doummal",
+    "contact": "wonhaneun geos-eul chaj-eul su eobsnayo? yeogileul keullighaseyo"
+  },
+  "portalCards": {
+    "step1": "logeu-in-i swiwojyeossseubnida",
+    "step2": "boan peulopil",
+    "step3": "peulopil eobdeiteu",
+    "step4": "hagsaeng poteol tamsaeg",
+    "officeStep": "Office 365lo saengsanseong hyangsang",
+    "watchButton": "bidioleulboda",
+    "link1": "logeu-in peijileul bangmunhalyeomyeon lingkeuleul keullighaseyo.",
+    "link2": "boan jilmun-eul chugahalyeomyeon lingkeuleul keullighaseyo.",
+    "link3": "peulopil jeongboleul eobdeiteuhalyeomyeon lingkeuleul keullighaseyo.",
+    "link4": "laending peijileul bangmunhalyeomyeon lingkeuleul keullighaseyo."
+  },
+  "faq": {
+    "heading1": "jaju mudneun jilmun",
+    "heading2": "jilmun",
+    "subheading": "ulie daehae al-aya hal modeun geos-eul mul-eoboseyo",
+    "q1": "Q. SELC Collegeneun jijeong hagseub jiggwan(DLI)ibnikka? daehag-ui DLI beonhoneun mueos-ibnikka?",
+    "ans1": "ye, SELC Collegeneun jijeong hagseub gigwan-imyeo daehag-ui DLI beonhoneun da-eumgwa gatseubnida.",
+    "q2": "Q. SELC Collegee daehan olienteisyeon-i issnayo?",
+    "ans2": "ye, olienteisyeon-eun hagsaengdeul-ege daehag-eul al-abogo, kaempeoseue daehae al-abogo, haengjeong damdangjawa sangho jag-yonghago, pil-yohal ttae doum-eul bad-eul su issneun jawon-eul hwag-inhal su issneun gihoeleul jegonghabnida. olienteisyeon-ui juyo mogjeog-eun hagsaengdeul-eul wihan tantanhan hagseub hwangyeong-gwa jiwon siseutem-eul gangjohaneun geos-ibnida. sin-ibsaeng olienteisyeon-e chamseoghaneun geos-eun modeun sin-ibsaeng-ege uimu sahang-ibnida. seong-gongjeog-in isuneun daleun koseu deunglog-eul wihan jeonje jogeon-igi ttaemun-ibnida.",
+    "q3": "Q. SELC daehag-eun hagsaengdeul-ege sugso jiwon-eul jegonghabnikka?",
+    "ans3": "ye",
+    "q4": "Q. SELCneun hagsaengdeul-ege janghaggeum, bosang ttoneun bojogeum-eul jegonghabnikka?",
+    "ans4": "ye, ulineun gugnae hagsaeng-gwa gugje hagsaeng moduga iyonghal su issneun dayanghan janghaggeum, sang, bojogeum-eul jegonghabnida. jagyeog yogeon mich jichimgwa hamkke jeonche moglog-e aegseseuhalyeomyeon dangsa lisoseuleul chamjohasibsio.",
+    "q5": "Q. hagsaengdeul-eun eotteon gyotongsudan-eul iyonghal su issnayo?",
+    "ans5": "SELC Collegeneun baenkubeo dauntaun jiyeog-ui jungsimbue wichihayeo beoseuwa seukaiteulein(SkyTrain) yeog-eul pohamhan dosiui gwangbeom-wihan daejung gyotong neteuwokeue pyeonlihage jeobgeunhal su issseubnida. ileohan jung-ang wichi deogbun-e hagsaengdeul-eun daehag-eul oganeun swibgo hyoyuljeog-in tonghag obsyeon-eul hwagbohal su iss-eumyeo, dosiui dayanghan jiyeog-eseo yeohaenghaneun salamdeul-i swibge jeobgeunhal su issseubnida.",
+    "q6": "Q. daehagsaengdo chwieobhal su issnayo?",
+    "ans6": "kaenada-eseo gongbuhaneun yuhagsaengdeul-eun choeso 6gaewol dong-an pultaim peulogeulaem-e deungloghan gyeong-u judang choedae 20sigankkaji ilhal su issseubnida. jasehan naeyong-eun da-eum-eul chamjohaseyo.",
+    "q7": "Q. daehag-eseoneun hagsaengdeul-ege jinlo jo-eon-ina jiwon-eul jegonghabnikka?",
+    "ans7": "ne, jeohui hyeobdongjohab buseoneun hagsaengdeul-i chwieob sijang-e junbihal su issdolog jiwon-eul jegonghabnida."
+  },
+  "footer": {
+    "heading" : "yeonlagcheo jeongbo"
+  }
+
+}

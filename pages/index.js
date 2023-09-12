@@ -5,38 +5,41 @@ import LoginGuideCard from '@/components/LoginGuideCard'
 import React, { useEffect, useState } from "react";
 import SuccessModal from '@/components/SuccessModal';
 import Hero from "@/components/Hero";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Home() {
+  const { selectedLanguage } = useLanguage();
+  const translations = require(`../utlis/languages/${selectedLanguage}.json`);
   const loginStep = {
-    heading: "Login Made Easy ",
+    heading: translations.portalCards.step1,
     image: "/steps/login.png",
     video: "/steps/login.mp4",
     redirect: "https://www.myselcedu.com/login/",
-    text: "Click link to visit login page"
+    text: translations.portalCards.link1,
   };
   const securityQuestion = {
-    heading: "Secure Profile",
+    heading: translations.portalCards.step2,
     image: "/steps/secure-profile.png",
     video: "/steps/secure-profile.mp4",
     redirect: "https://www.myselcedu.com/profile/setup/",
-    text: "Click link to add security questions"
+    text: translations.portalCards.link2,
   };
   const updateProfile = {
-    heading: "Update your Profile",
+    heading: translations.portalCards.step3,
     image: "/steps/update.png",
     video: "/steps/profile.mp4",
     redirect: "https://www.myselcedu.com/profile/requests/?r=109",
-    text: "Click link to update the profile information"
+    text: translations.portalCards.link3,
   };
   const portalUse = {
-    heading: "Navigating the Student Portal",
+    heading: translations.portalCards.step3,
     image: "/steps/portal1.png",
     video: "/steps/portal.mp4",
     redirect: "https://www.myselcedu.com/",
-    text: "Click link to visit landing page"
+    text: translations.portalCards.link4,
   };
   const officeloginStep = {
-    heading: "Boost Productivity with Office 365",
+    heading: translations.portalCards.officeStep,
     steps: [
       "Microsoft 365 is our cloud-powered productivity platform. ​​",
       "The latest productivity apps, such as Microsoft Teams, Word, Excel, PowerPoint, Outlook, OneDrive, and so much more.​",
@@ -45,7 +48,7 @@ export default function Home() {
     image: "/steps/mslogin1.png",
     video: "/steps/msoffice.mp4",
     redirect: "https://www.office.com/",
-    text: "Click link to visit login page"
+    text: translations.portalCards.link1,
   };
   const [formData, setFormData] = useState({
     fullName: '',
@@ -109,7 +112,7 @@ const [isClose, setIsClose] = useState(true);
           <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
             <Card
               bg="card1"
-              heading="Student portal"
+              heading={translations.mainCards.portal}
               subhead="Please follow our step by step guide"
               image="/identification.svg"
               setIsLoginClick={setIsLoginClick}
@@ -119,7 +122,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card1"
-              heading="Student portal"
+              heading={translations.mainCards.portal}
               subhead="Please follow our step by step guide"
               image="/identification.svg"
               setIsLoginClick={setIsLoginClick}
@@ -129,7 +132,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card2"
-              heading="MS office student login help"
+              heading={translations.mainCards.office}
               subhead="Please follow our step by step guide"
               image="/microsoft.svg"
               setIsLoginClick={setIsLoginClick}
@@ -139,7 +142,7 @@ const [isClose, setIsClose] = useState(true);
             />
              <Card
               bg="card2"
-              heading="MS office student login help"
+              heading={translations.mainCards.office}
               subhead="Please follow our step by step guide"
               image="/microsoft.svg"
               setIsLoginClick={setIsLoginClick}
@@ -149,7 +152,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card3"
-              heading="Can’t find what you’re looking for? Click here."
+              heading={translations.mainCards.contact}
               subhead="Feel free to contact us"
               image="/hand.svg"
               setIsLoginClick={setIsLoginClick}
@@ -159,7 +162,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card3"
-              heading="Can’t find what you’re looking for? Click here."
+              heading={translations.mainCards.contact}
               subhead="Feel free to contact us"
               image="/hand.svg"
               setIsLoginClick={setIsLoginClick}
@@ -169,7 +172,7 @@ const [isClose, setIsClose] = useState(true);
             />
             <Card
               bg="card1"
-              heading="Student portal"
+              heading={translations.mainCards.portal}
               subhead="Please follow our step by step guide"
               image="/identification.svg"
               setIsLoginClick={setIsLoginClick}

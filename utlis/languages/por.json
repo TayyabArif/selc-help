@@ -1,0 +1,52 @@
+{
+  "header": {
+    "home": "Lar",
+    "help": "Ajuda",
+    "faq": "Perguntas frequentes",
+    "portal": "Vá para o Postal do Aluno"
+  },
+  "hero": {
+    "welcomeMessage": " Bem-vindo ao Help Desk do aluno <strong>SELC</strong>.",
+    "desc": "Estamos aqui para fornecer um guia passo a passo de como usar o portal do aluno.",
+    "button": "Iniciar"
+  },
+  "mainCards": {
+    "portal": "Portal do aluno",
+    "office": "Ajuda de login para estudantes do MS Office",
+    "contact": "Não consegue encontrar o que procura? Clique aqui"
+  },
+  "portalCards": {
+    "step1": "Login facilitado",
+    "step2": "Perfil Seguro",
+    "step3": "Atualize seu perfil",
+    "step4": "Navegando no Portal do Aluno",
+    "officeStep": "Aumente a produtividade com o Office 365",
+    "watchButton": "Assista vídeo",
+    "link1": "Clique no link para visitar a página de login",
+    "link2": "Clique no link para adicionar perguntas de segurança",
+    "link3": "Clique no link para atualizar as informações do perfil",
+    "link4": "Clique no link para visitar a página de destino"
+  },
+  "faq": {
+    "heading1": "Perguntas Frequentes",
+    "heading2": "",
+    "subheading": "Pergunte tudo o que você precisa saber sobre nós.",
+    "q1": "P. O SELC College é uma Intuição de Aprendizagem Designada (DLI)? Qual é o número DLI da faculdade.",
+    "ans1": "Sim, a SELC College é uma instituição de aprendizagem designada e o número DLI da faculdade é",
+    "q2": "P. Existe orientação para o SELC College.?",
+    "ans2": "Sim, a Orientação oferece aos alunos a oportunidade de conhecer a universidade, conhecer o campus, interagir com o pessoal administrativo e identificar os recursos disponíveis para atendimento quando necessário. O objetivo principal da orientação é enfatizar nosso ambiente de aprendizagem robusto e sistema de apoio aos alunos. Esteja ciente de que a participação na Orientação para Novos Alunos é obrigatória para todos os alunos ingressantes, pois a conclusão com aproveitamento é pré-requisito para matrícula em outros cursos.",
+    "q3": "P. A faculdade SELC oferece alguma assistência de acomodação aos seus alunos?",
+    "ans3": "Sim",
+    "q4": "P. A SELC oferece bolsas de estudo, recompensas ou subsídios aos alunos?",
+    "ans4": "Sim, oferecemos uma variedade de bolsas de estudo, prêmios e subsídios acessíveis a estudantes nacionais e internacionais. Para acessar uma lista abrangente, juntamente com os requisitos e diretrizes de elegibilidade, consulte nossos recursos.",
+    "q5": " P. Que meio de transporte está disponível para os alunos?",
+    "ans5": "O SELC College desfruta de uma localização privilegiada no coração do centro de Vancouver, proporcionando acesso conveniente à extensa rede de transporte público da cidade, incluindo ônibus e estações SkyTrain. Esse posicionamento central garante que os alunos tenham opções de deslocamento fáceis e eficientes de ida e volta para a faculdade, tornando-a altamente acessível para quem viaja de vários pontos da cidade.",
+    "q6": "P. Os alunos são elegíveis para trabalhar enquanto frequentam a faculdade?",
+    "ans6": "Os estudantes internacionais que estudam no Canadá podem trabalhar até 20 horas por semana se estiverem matriculados em um programa de tempo integral com duração mínima de seis meses. Para obter mais informações, visite:",
+    "q7": "P. A faculdade oferece algum conselho profissional ou apoio aos seus alunos?",
+    "ans7": "Sim, nosso departamento cooperativo oferece auxílio aos alunos na preparação para o mercado de trabalho."
+  },
+  "footer": {
+    "heading" : "Informações de contato"
+  }
+}
