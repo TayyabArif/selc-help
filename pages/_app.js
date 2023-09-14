@@ -1,10 +1,13 @@
 import '@/styles/globals.css'
-import { LanguageProvider
- } from '@/contexts/LanguageContext'
+import { LanguageProvider} from '@/contexts/LanguageContext'
+import { TourProvider} from '@/contexts/TourContext'
+
 export default function App({ Component, pageProps }) {
   return (
     <LanguageProvider>
-    <Component {...pageProps} />
+    <TourProvider>
+      <Component {...pageProps} />
+    </TourProvider>
   </LanguageProvider>
   )
 }

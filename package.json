@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "cookie": "^0.5.0",
+    "framer-motion": "6.0.0",
     "next": "13.4.19",
     "nodemailer": "^6.9.4",
     "postcss": "8.4.28",
@@ -19,7 +21,6 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "3.3.3",
-    "framer-motion": "6.0.0"
+    "tailwindcss": "3.3.3"
   }
 }

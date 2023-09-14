@@ -3,10 +3,10 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, visitCount, isArrive }) => {
   return (
     <div className="flex flex-col w-full h-full">
-    <Header />
+    <Header visitCount={visitCount} isArrive={isArrive}/>
      {children}
       <Footer />
     </div>

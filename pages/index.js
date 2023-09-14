@@ -6,10 +6,29 @@ import React, { useEffect, useState } from "react";
 import SuccessModal from '@/components/SuccessModal';
 import Hero from "@/components/Hero";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTour } from '@/contexts/TourContext';
 
 export default function Home() {
   const { selectedLanguage } = useLanguage();
   const translations = require(`../utlis/languages/${selectedLanguage}.json`);
+
+  const [visitCount, setVisitCount] = useState(0);
+  const [isArrive, setIsArrive] =useState(false)
+
+  useEffect(() => {
+    fetch('/api/visit')
+      .then((response) => response.json())
+      .then((data) => {
+        setVisitCount(data.visitCount);
+        setIsArrive(true)
+      });
+  }, []);
+
+  useEffect(() => {
+    if (visitCount < 4) {
+    }
+  }, [visitCount]);
+
   const loginStep = {
     heading: translations.portalCards.step1,
     image: "/steps/login.png",
@@ -95,15 +114,22 @@ const handleCloseModal = () => {
 setIsSuccessModalOpen(false);
 };
 
-const [isNextClick, setIsNextClick] = useState(false)
-const [isClose, setIsClose] = useState(true);
+  const [isNextClick, setIsNextClick] = useState(false)
+  const [isClose, setIsClose] = useState(true);
   const [isloginClick, setIsLoginClick] = useState("");
   const [isNotLikeVideo, setIsNotLikeVideo] = useState(false);
   const [isClick, setIsClick] = useState(false);
+
+  const { stepCount, incrementStep, handleSkip } = useTour();
+  useEffect(() => {
+    if (stepCount === 4) {
+      setIsLoginClick("login")
+    }
+  }, [stepCount])
   return (
-    <Layout>
+    <Layout visitCount={visitCount} isArrive={isArrive}>
       <div className="flex w-full flex-col bg-white h-full mt-20">
-        <Hero />
+        <Hero visitCount={visitCount}/>
         <div id="cardsSection1" className="h-10">
         </div>
         <div id="cardsSection">
@@ -185,7 +211,7 @@ const [isClose, setIsClose] = useState(true);
         <div id="videoButton" className="h-20"></div>
         {isloginClick === "login" &&
           <div className='px-10 flex md:flex-wrap md:flex-row flex-col items-center justify-center w-full mt-5 gap-5 my-5'>
-            <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
+            <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} visitCount={visitCount} />
             <LoginGuideCard data={securityQuestion} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
             <LoginGuideCard data={updateProfile} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
             <LoginGuideCard data={portalUse} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
@@ -251,7 +277,7 @@ const [isClose, setIsClose] = useState(true);
               <SuccessModal isOpen={isSuccessModalOpen} onClose={handleCloseModal} />
           </div>
         }
-        <Faq />
+        <Faq visitCount={visitCount}/>
       </div>
     </Layout>
   );

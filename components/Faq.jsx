@@ -2,8 +2,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTour } from '@/contexts/TourContext';
 
-const Faq = () => {
+const Faq = ({visitCount}) => {
   const { selectedLanguage } = useLanguage();
   const translations = require(`../utlis/languages/${selectedLanguage}.json`);
   const [question1, setQuestion1] = useState(false);
@@ -14,6 +15,7 @@ const Faq = () => {
   const [question6, setQuestion6] = useState(false);
   const [question7, setQuestion7] = useState(false);
   const [sendRequest, setSendRequest] = useState(false);
+  const { stepCount, incrementStep, handleSkip } = useTour();
 
   return (
     <>
@@ -22,13 +24,24 @@ const Faq = () => {
         id="target_faq"
       >
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="relative max-w-2xl mx-auto text-center">
             <h2 className=" text-[2rem] md:text-[3rem] font-bold tracking-tight text-branding ">
               {translations.faq.heading1} <span className="text-gray-700">{translations.faq.heading2}</span>
             </h2>
             <p className="mt-4 text-base font-semibold leading-7 text-gray-600 lg:text-xl  lg:mt-6 lg:leading-8">
               {translations.faq.subheading}
             </p>
+            {visitCount < 4  && stepCount === 5 &&
+                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:top-[50%] top-[60%] md:left-[80%] -left-[0%] z-10 card-animation1 text-start">
+                  <div className="md:triangle-left triangle-top1"></div>
+                 <h2 class="text-xl font-semibold mb-2">5/5</h2>
+                  <h2 class="text-xl font-semibold mb-2">What is Faq?</h2>
+                  <p class="mb-6">Faq section includes all the common queries of students</p>
+                  <div class="flex justify-end gap-5 mt-4">
+                    <button class="px-4 py-2 bg-primary hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Finish</button>
+                  </div>
+                </div>
+              }
           </div>
           <div className="max-w-5xl mx-auto mt-12 overflow-hidden border border-gray-200 divide-y divide-gray-200 sm:mt-16 rounded-xl">
             <div>

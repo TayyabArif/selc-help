@@ -153,3 +153,115 @@ ul.bullets {
 select {
   outline: none;
 }
+
+.card-animation {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-animation1 {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideBottom 1s ease-in-out forwards;
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card-animation3 {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20%); /* Slide in from bottom */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* No vertical translation */
+    opacity: 1;
+  }
+}
+
+.triangle-top::after {
+    border-bottom: 11px solid rgba(249, 115, 22, 0.7);
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1px;
+    top: -11px;
+}
+
+.triangle-left::after {
+  border-right: 11px solid rgba(249, 115, 22, 0.7); /* Right side of the arrow */
+  border-top: 11px solid transparent; /* Top side of the arrow */
+  border-bottom: 11px solid transparent; /* Bottom side of the arrow */
+  content: "";
+  /* display: inline-block; */
+  position: absolute;
+  right: 0;
+  left: -103%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1px;
+  top: 30%;
+  z-index: 10;
+}
+
+
+.triangle-top1::after {
+  border-bottom: 11px solid rgba(249, 115, 22, 0.7);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 70%;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1px;
+  top: -11px;
+}
+
+@media screen and (max-width: 768px) {
+  .triangle-top::after {
+    border-bottom: 11px solid rgba(249, 115, 22, 0.7);
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 70%;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1px;
+    top: -11px;
+  }
+}
