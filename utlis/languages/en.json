@@ -8,12 +8,22 @@
   "hero": {
     "welcomeMessage": "Welcome to <strong>SELC</strong> student Help Desk.",
     "desc": "We are here to provide you step by step guide of how to use the student portal.",
-    "button": "Get Started"
+    "button": "Get Started",
+    "banner": "Empowering Students Towards The Brighter Future. Empowering Students Towards The Brighter Future. Empowering Students Towards The Brighter Future"
   },
   "mainCards": {
     "portal": "Student portal",
-    "office": "MS office student login help",
-    "contact": "Can’t find what you’re looking for? Click here"
+    "moodle": "Learning through Moodle",
+    "office": "MS Office Student Account",
+    "admin": "Admin /Reception",
+    "registration": "Registration Department",
+    "studentService": "Student Services",
+    "finance": "Finance department",
+    "career": "Co-op & Career Development",
+    "policies": "College Procedure & Policies",
+    "contact": "Contact US",
+    "faq": "FAQ",
+    "learn": "Learn More"
   },
   "portalCards": {
     "step1": "Login Made Easy",
@@ -48,6 +58,22 @@
   },
   "footer": {
     "heading" : "Contact Info"
+  },
+  "contact": {
+    "name": "Full Name",
+    "studentID": "Student ID",
+    "email": "Enter your email",
+    "depart": "Choose your Department to contact",
+    "option1": "Marketer",
+    "option2": "Student Services",
+    "option3": "Registrar",
+    "option4": "Co-op",
+    "option5": "IT",
+    "note": "Note",
+    "para": "Please note that requests might take upto 24 hours to process. Thank you for your patience!",
+    "message": "Your message",
+    "messageComment": "Type your message",
+    "sendmessage": "Send message"
   }
 
 }

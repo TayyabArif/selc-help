@@ -8,12 +8,22 @@
   "hero": {
     "welcomeMessage": "<strong>SELC</strong> hagsaeng helpeu deseukeue osin geos-eul hwan-yeonghabnida.",
     "desc": "ulineun hagsaeng poteol-eul sayonghaneun bangbeob-e daehan dangyebyeol gaideuleul jegonghagi wihae wassseubnida.",
-    "button": "sijaghada"
+    "button": "sijaghada",
+    "banner": "deo balg-eun milaeleul hyanghae hagsaengdeul-ui yeoglyang-eul ganghwahabnida. deo balg-eun milaeleul hyanghae hagsaengdeul-ui yeoglyang-eul ganghwahabnida. deo balg-eun milaeleul hyanghan hagsaengdeul-ui yeoglyang ganghwa"
   },
   "mainCards": {
     "portal": "hagsaeng poteol",
-    "office": "MS Office hagsaeng logeu-in doummal",
-    "contact": "wonhaneun geos-eul chaj-eul su eobsnayo? yeogileul keullighaseyo"
+    "moodle": "mudeul-eul tonghan hagseub",
+    "office": "MS Office hagsaeng gyejeong",
+    "admin": "gwanli/jeobsu",
+    "registration": "deunglogbuseo",
+    "studentService": "hagsaeng seobiseu",
+    "finance": "jaemu buseo",
+    "career": "hyeobdongjohab mich gyeonglyeog gaebal",
+    "policies": "daehag jeolcha mich jeongchaeg",
+    "contact": "mun-uihagi",
+    "faq": "jajuhaneun jilmun",
+    "learn": "deo al-abogi"
   },
   "portalCards": {
     "step1": "logeu-in-i swiwojyeossseubnida",
@@ -48,6 +58,22 @@
   },
   "footer": {
     "heading" : "yeonlagcheo jeongbo"
+  },
+  "contact": {
+    "name": "seongmyeong",
+    "studentID": "hagsaeng aidi",
+    "email": "imeil-eul iblyeoghaseyo",
+    "depart": "yeonlaghal buseoleul seontaeghaseyo",
+    "option1": "maketeo",
+    "option2": "hagsaeng seobiseu",
+    "option3": "gilog samugwan",
+    "option4": "gadueo nohda",
+    "option5": "geugeos",
+    "note": "memo",
+    "para": "yocheong-eul cheolihaneun de choedae 24sigan-i geollil su issseubnida. yanghaehae jusyeoseo gamsahabnida!",
+    "message": "gwihaui mesiji",
+    "messageComment": "mesijileul iblyeoghaseyo",
+    "sendmessage": "munja bonae"
   }
 
 }

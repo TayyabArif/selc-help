@@ -8,12 +8,22 @@
   "hero": {
     "welcomeMessage": " Bem-vindo ao Help Desk do aluno <strong>SELC</strong>.",
     "desc": "Estamos aqui para fornecer um guia passo a passo de como usar o portal do aluno.",
-    "button": "Iniciar"
+    "button": "Iniciar",
+    "banner": "Capacitando os alunos para um futuro melhor. Capacitando os alunos para um futuro melhor. Capacitando os alunos para um futuro melhor"
   },
   "mainCards": {
     "portal": "Portal do aluno",
-    "office": "Ajuda de login para estudantes do MS Office",
-    "contact": "Não consegue encontrar o que procura? Clique aqui"
+    "moodle": "Aprendendo através do Moodle",
+    "office": "Conta de estudante do MS Office",
+    "admin": "Administrador/Recepção",
+    "registration": "Departamento de Registro",
+    "studentService": "Serviços estudantis",
+    "finance": "Departamento de Finanças",
+    "career": "Cooperação e desenvolvimento de carreira",
+    "policies": "Procedimentos e políticas da faculdade",
+    "contact": "Contate-nos",
+    "faq": "Perguntas frequentes",
+    "learn": "Saber mais"
   },
   "portalCards": {
     "step1": "Login facilitado",
@@ -48,5 +58,21 @@
   },
   "footer": {
     "heading" : "Informações de contato"
+  },
+  "contact": {
+    "name": "Nome completo",
+    "studentID": "Identidade estudantil",
+    "email": "Digite seu e-mail",
+    "depart": "Escolha o seu Departamento para entrar em contato",
+    "option1": "Profissional de marketing",
+    "option2": "Serviços estudantis",
+    "option3": "Registrador",
+    "option4": "Cooperativa",
+    "option5": "ISTO",
+    "note": "Observação",
+    "para": "Observe que as solicitações podem levar até 24 horas para serem processadas. Obrigado pela sua paciência!",
+    "message": "Sua mensagem",
+    "messageComment": "Digite sua mensagem",
+    "sendmessage": "Enviar mensagem"
   }
 }

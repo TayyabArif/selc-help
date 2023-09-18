@@ -39,6 +39,36 @@ body {
 .card3{
   background-image: linear-gradient(45deg,#773f18 30%,#a47a5d 100%);
 }
+.card4{
+  background-image: linear-gradient(45deg, #000000 30%, #9EA1A3 100%);
+}
+.card5{
+  background-image: linear-gradient(45deg, #DAEAEF 30%, #9EA1A3 100%);
+}
+.card6{
+  background-image: linear-gradient(45deg, #DEE0E2 30%, #FFFFFF 100%);
+}
+.card6{
+  background-image: linear-gradient(45deg, #DEE0E2 30%, #FFFFFF 100%);
+}
+.card7 {
+  background-image: linear-gradient(45deg, #f4e55a 30%, #baf351 100%);
+}
+.card8 {
+  background-image: linear-gradient(45deg, #85eaf3 40%, #63e9f5 60%);
+}
+/* .card9 {
+  background-image: linear-gradient(45deg, #339966 30%, #33CCCC 100%);
+} */
+.card9{
+  background-image: linear-gradient(45deg, #9EA1A3 30%, #000000 100%);
+}
+.card10 {
+  background-image: linear-gradient(45deg, #f6bf59 30%, #e9c525 100%);
+}
+.card11 {
+  background-image: linear-gradient(45deg, #FF5733 30%, #FFA400 100%);
+  }
 ul.bullets {
   list-style-type: disc; /* This sets the bullet style to a disc */
   /* You can also use other values like 'circle', 'square', etc. */

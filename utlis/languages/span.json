@@ -1,0 +1,79 @@
+{
+  "header": {
+    "home": "Hogar",
+    "help": "Ayuda",
+    "faq": "Preguntas más frecuentes",
+    "portal": "Ir al correo estudiantil"
+  },
+  "hero": {
+    "welcomeMessage": "Bienvenido a la mesa de ayuda para estudiantes de <strong>SELC</strong>.",
+    "desc": "Estamos aquí para brindarle una guía paso a paso sobre cómo utilizar el portal para estudiantes.",
+    "button": "Empezar",
+    "banner": "Empoderar a los estudiantes hacia un futuro mejor. Empoderar a los estudiantes hacia un futuro mejor. Empoderar a los estudiantes hacia un futuro mejor"
+  },
+  "mainCards": {
+    "portal": "Portal estudiantil",
+    "moodle": "Aprender a través de Moodle",
+    "office": "Cuenta de estudiante de MS Office",
+    "admin": "Administrador/Recepción",
+    "registration": "Departamento de Registro",
+    "studentService": "Servicios estudiantiles",
+    "finance": "Departamento de Finanzas",
+    "career": "Desarrollo cooperativo y profesional",
+    "policies": "Procedimientos y políticas universitarias",
+    "contact": "Contáctenos",
+    "faq": "Preguntas más frecuentes",
+    "learn": "Aprende más"
+  },
+  "portalCards": {
+    "step1": "Iniciar sesión de forma fácil",
+    "step2": "Perfil seguro",
+    "step3": "Actualiza tu perfil",
+    "step4": "Navegando por el portal del estudiante",
+    "officeStep": "Aumente la productividad con Office 365",
+    "watchButton": "Ver video",
+    "link1": "Haga clic en el enlace para visitar la página de inicio de sesión",
+    "link2": "Haga clic en el enlace para agregar preguntas de seguridad",
+    "link3": "Haga clic en el enlace para actualizar la información del perfil.",
+    "link4": "Haga clic en el enlace para visitar la página de destino"
+  },
+  "faq": {
+    "heading1": "Preguntas frecuentes",
+    "heading2": "Preguntas",
+    "subheading": "Pregunta todo lo que necesites saber sobre nosotros",
+    "q1": "P. ¿Es SELC College una Intuición de Aprendizaje Designada (DLI)? ¿Cuál es el número DLI para la universidad?",
+    "ans1": "Sí, SELC College es una institución de aprendizaje designada y el número DLI para la universidad es",
+    "q2": "P. ¿Hay orientación para SELC College?",
+    "ans2": "Sí, la Orientación brinda a los estudiantes la oportunidad de descubrir la universidad, familiarizarse con el campus, interactuar con el personal administrativo e identificar recursos disponibles para brindar asistencia cuando sea necesario. El objetivo principal de la orientación es subrayar nuestro sólido entorno de aprendizaje y sistema de apoyo para los estudiantes. Tenga en cuenta que la asistencia a la Orientación para nuevos estudiantes es obligatoria para todos los estudiantes entrantes, ya que completarla con éxito es un requisito previo para inscribirse en otros cursos.",
+    "q3": "P.¿Ofrece SELC College alguna asistencia de alojamiento a sus estudiantes?",
+    "ans3": "Sí",
+    "q4": "P. ¿SELC ofrece becas, recompensas o subvenciones a los estudiantes?",
+    "ans4": "Sí, ofrecemos una variedad de becas, premios y subvenciones accesibles tanto para estudiantes nacionales como internacionales. Para acceder a una lista completa, junto con los requisitos y pautas de elegibilidad, consulte nuestros recursos.",
+    "q5": "P. ¿Qué modo de transporte está disponible para los estudiantes?",
+    "ans5": "SELC College disfruta de una ubicación privilegiada en el corazón del centro de Vancouver, lo que brinda un cómodo acceso a la extensa red de transporte público de la ciudad, incluidos autobuses y estaciones de SkyTrain. Esta ubicación central garantiza que los estudiantes tengan opciones de transporte fáciles y eficientes hacia y desde la universidad, lo que la hace muy accesible para quienes viajan desde varias partes de la ciudad.",
+    "q6": "P. ¿Son los estudiantes elegibles para trabajar mientras asisten a la universidad?",
+    "ans6": "Los estudiantes internacionales que estudian en Canadá pueden trabajar hasta 20 horas por semana si están inscritos en un programa de tiempo completo que dure al menos seis meses. Para obtener más información, visite:",
+    "q7": "P. ¿Ofrece la universidad algún consejo o apoyo profesional a sus estudiantes?",
+    "ans7": "Sí, nuestro departamento cooperativo ofrece asistencia a los estudiantes para prepararse para el mercado laboral."
+  },
+  "footer": {
+    "heading" : "Datos de contacto"
+  },
+  "contact": {
+    "name": "Nombre completo",
+    "studentID": "Identificación del Estudiante",
+    "email": "Introduce tu correo electrónico",
+    "depart": "Elige tu Departamento para contactar",
+    "option1": "Comercializadora",
+    "option2": "Servicios estudiantiles",
+    "option3": "Registradora",
+    "option4": "Cooperativa",
+    "option5": "ÉL",
+    "note": "Nota",
+    "para": "Tenga en cuenta que las solicitudes pueden tardar hasta 24 horas en procesarse. ¡Gracias por su paciencia!",
+    "message": "Tu mensaje",
+    "messageComment": "Escribe tu mensaje",
+    "sendmessage": "Enviar mensaje"
+  }
+
+}

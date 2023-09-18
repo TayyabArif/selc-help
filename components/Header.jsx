@@ -98,7 +98,7 @@ const Header = ({visitCount, isArrive}) => {
             >
                {translations.header.help}
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="target_faq"
               spy={true}
@@ -115,7 +115,7 @@ const Header = ({visitCount, isArrive}) => {
               }
             >
               {translations.header.faq}
-            </LinkScroll>
+            </LinkScroll> */}
           </ul>
           <div className="flex items-center gap-10 md:col-start-11 md:col-end-12">
             <div className="flex relative">
@@ -128,12 +128,13 @@ const Header = ({visitCount, isArrive}) => {
                   <option value="por">Portuguese</option>
                   <option value="kor">Korean</option>
                   <option value="jap">Japanese</option>
+                  <option value="span">Spanish</option>
                 </select>
               </div>
               {isArrive && visitCount < 5 && stepCount === 1 &&
                 <div class=" bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] top-[140%] md:-left-[100%] -left-[10%] z-10 card-animation">
                   <div className="triangle-top"></div>
-                  <h2 class="text-xl font-semibold mb-2">1/5</h2>
+                  <h2 class="text-xl font-semibold mb-2">1/4</h2>
                   <h2 class="text-xl font-semibold mb-2">Use different languages</h2>
                   <p class="mb-6">Change language according to your choice</p>
                   <div class="flex justify-end gap-5 mt-4">
@@ -159,7 +160,7 @@ const Header = ({visitCount, isArrive}) => {
               {visitCount < 4 && stepCount === 3 &&
                 <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] top-[140%] md:-left-[80%] -left-[100%] card-animation3">
                   <div className="triangle-top"></div>
-                  <h2 class="text-xl font-semibold mb-2">3/5</h2>
+                  <h2 class="text-xl font-semibold mb-2">3/4</h2>
                   <h2 class="text-xl font-semibold mb-2">Visit SELC portal</h2>
                   <p class="mb-6">Visit the student portal once you get knowledge</p>
                   <div class="flex justify-end gap-5 mt-4">

@@ -25,7 +25,6 @@ const Hero = ({visitCount}) => {
     }
   }
 
-
   return (
     <div
       className="pt-10 bg-gray-50"
@@ -36,9 +35,6 @@ const Hero = ({visitCount}) => {
             className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 px-8 xl:px-16"
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              {/* <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-600 leading-normal">
-                Welcome to <strong>SELC</strong> student Help Desk.
-              </h1> */}
               <h1
                   className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-600 leading-normal"
                   dangerouslySetInnerHTML={htmlContent}
@@ -65,7 +61,7 @@ const Hero = ({visitCount}) => {
               {visitCount < 4  && stepCount === 2 &&
                 <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:-top-[100%] top-[130%] md:left-[110%] left-[0%] z-10 card-animation1">
                   <div className="triangle-left"></div>
-                 <h2 class="text-xl font-semibold mb-2">2/5</h2>
+                 <h2 class="text-xl font-semibold mb-2">2/4</h2>
                   <h2 class="text-xl font-semibold mb-2">Check our help desk</h2>
                   <p class="mb-6">Get your queries done in seconds</p>
                   <div class="flex justify-end gap-5 mt-4">
@@ -94,8 +90,7 @@ const Hero = ({visitCount}) => {
       <div className="relative w-full md:flex hidden py-5 bg-gray-100">
       <div className="overflow-hidden w-full">
       <div className="animate-marquee whitespace-nowrap text-gray-600 w-full text-primary font-bold">
-        Your running headline text goes here. Make it as long as you want!
-        Your running headline text goes here. Make it as long as you want!
+        {translations.hero.banner}
       </div>
     </div>
     </div>

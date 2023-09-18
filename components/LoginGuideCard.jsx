@@ -50,17 +50,17 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick, visitCount}) 
           {visitCount < 4  && stepCount === 4 &&
                 <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:-top-[100%] top-[130%] md:left-[80%] -left-[10%] z-10 card-animation1">
                   <div className="triangle-left"></div>
-                 <h2 class="text-xl font-semibold mb-2">4/5</h2>
+                 <h2 class="text-xl font-semibold mb-2">4/4</h2>
                   <h2 class="text-xl font-semibold mb-2">How video help you?</h2>
                   <p class="mb-6">Click on watch video for every step and you'll get a video guide how to use portal</p>
                   <div class="flex justify-end gap-5 mt-4">
-                    <button class="px-4 py-2 hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Skip Tour</button>
-                    <button class="px-4 py-0 bg-primary text-white rounded focus:outline-none" onClick={handleNext}>Next</button>
+                    <button class="px-4 py-2 bg-primary hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Finish</button>
                   </div>
                 </div>
               }
         </div>
         <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} redirect={data?.redirect} text={data.text} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
+        {/* <div id="video_modal"></div> */}
       </div>
     </div>
   );

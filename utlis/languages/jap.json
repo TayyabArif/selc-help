@@ -8,12 +8,22 @@
   "hero": {
     "welcomeMessage": "<strong>SELC</strong> gakusei herupu desuku e yōkoso.",
     "desc": "Kokode wa, gakusei pōtaru no shiyō hōhō o dankai-teki ni setsumei shimasu.",
-    "button": "Hajimemashou"
+    "button": "Hajimemashou",
+    "banner": "Seito-tachi o akarui mirai ni mukete shien shimasu. Seito-tachi o akarui mirai ni mukete shien shimasu. Akarui mirai ni mukete gakusei-tachi ni chikara o ataeru"
   },
   "mainCards": {
     "portal": "Gakusei pōtaru",
-    "office": "MS ofisu gakusei roguin no herupu",
-    "contact": "Sagashite iru mono ga mitsukarimasen ka? Kokowokurikku"
+    "moodle": "Mūdoru o tsūjite gakushū suru",
+    "office": "MS ofisu gakusei akaunto",
+    "admin": "Kanrisha/ uketsuke",
+    "registration": "Tōroku bumon",
+    "studentService": "Gakusei sābisu",
+    "finance": "Zaimu-bu",
+    "career": "Kyōdō kumiai to kyaria kaihatsu",
+    "policies": "Daigaku no tetsudzuki to porishī",
+    "contact": "O toiawase",
+    "faq": "Yokuarushitsumon",
+    "learn": "Motto kuwashiku shiru"
   },
   "portalCards": {
     "step1": "Roguin ga kantan ni",
@@ -48,6 +58,22 @@
   },
   "footer": {
     "heading" : "Renrakusen jōhō"
+  },
+  "contact": {
+    "name": "Furunēmu",
+    "studentID": "Gakusei-shō",
+    "email": "Mēruadoresu o nyūryoku",
+    "depart": "Renrakusen no bumon o sentaku shite kudasai",
+    "option1": "Māketā",
+    "option2": "Gakusei sābisu",
+    "option3": "Rejisutora",
+    "option4": "Kōpu",
+    "option5": "Sore",
+    "note": "Chūki",
+    "para": "Rikuesuto no shori ni wa saidai 24-jikan kakaru baai ga arimasunode, go ryōshō kudasai. Omachi itadaite arigatōgozaimasu!",
+    "message": "Anata no messēji",
+    "messageComment": "Messēji o nyūryoku shite kudasai",
+    "sendmessage": "Messēji o okuru"
   }
 
 }

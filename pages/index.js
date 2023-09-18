@@ -147,17 +147,16 @@ setIsSuccessModalOpen(false);
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
             <Card
-              bg="card1"
-              heading={translations.mainCards.portal}
-              subhead="Please follow our step by step guide"
-              image="/identification.svg"
+              bg="card2"
+              heading={translations.mainCards.moodle}
+              image="/learning.svg"
               setIsLoginClick={setIsLoginClick}
               value="login"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
             <Card
-              bg="card2"
+              bg="card3"
               heading={translations.mainCards.office}
               subhead="Please follow our step by step guide"
               image="/microsoft.svg"
@@ -167,42 +166,82 @@ setIsSuccessModalOpen(false);
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
              <Card
-              bg="card2"
-              heading={translations.mainCards.office}
+              bg="card4"
+              heading={translations.mainCards.admin}
               subhead="Please follow our step by step guide"
-              image="/microsoft.svg"
+              image="/icon-admin.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+             <Card
+              bg="card5"
+              heading={translations.mainCards.registration}
+              subhead="Please follow our step by step guide"
+              image="/registration.svg"
               setIsLoginClick={setIsLoginClick}
               value="ms"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
             <Card
-              bg="card3"
-              heading={translations.mainCards.contact}
-              subhead="Feel free to contact us"
-              image="/hand.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="contact"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card3"
-              heading={translations.mainCards.contact}
-              subhead="Feel free to contact us"
-              image="/hand.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="contact"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card1"
-              heading={translations.mainCards.portal}
+              bg="card6"
+              heading={translations.mainCards.studentService}
               subhead="Please follow our step by step guide"
-              image="/identification.svg"
+              image="/service.svg"
               setIsLoginClick={setIsLoginClick}
-              value="login"
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card7"
+              heading={translations.mainCards.finance}
+              subhead="Please follow our step by step guide"
+              image="/finance.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card8"
+              heading={translations.mainCards.career}
+              subhead="Please follow our step by step guide"
+              image="/development.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+             <Card
+              bg="card9"
+              heading={translations.mainCards.policies}
+              subhead="Please follow our step by step guide"
+              image="/policies.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="ms"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card10"
+              heading={translations.mainCards.contact}
+              subhead="Feel free to contact us"
+              image="/hand.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="contact"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card11"
+              heading={translations.mainCards.faq}
+              subhead="Feel free to contact us"
+              image="/question.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="contact"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -226,20 +265,20 @@ setIsSuccessModalOpen(false);
           <div className="py-6 px-4 mx-auto min-w-[80%] max-w-screen-xl sm:py-8 lg:px-6 ">
               <form onSubmit={handleSubmit}  className="flex flex-col gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-[#fcfafc] rounded-lg border border-gray-200 shadow-sm lg:mb-28">
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Full Name" required />
-                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder="Student ID" required />
+                      <input type="text" id="full-name" name='fullName' value={formData.fullName} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder={translations.contact.name} required />
+                      <input type="number" id="student-id" name='studentID' value={formData.studentID} onChange={handleChange} className="block p-3 w-full text-sm text-gray-500 bg-gray-300 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 placeholder-gray-500" placeholder={translations.contact.studentID} required />
                   </div>
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
-                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-500" placeholder="Enter your email" required />
+                      <input type="email" id="email" name='email' value={formData.email} onChange={handleChange} className="shadow-sm bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-500" placeholder={translations.contact.email} required />
                   </div>
 
                   <select id="countries" name='department' onChange={handleChange} class="bg-gray-300 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-                    <option selected>Choose your Department to cintact</option>
-                    <option value="tayyab.dev12@gmail.com">Marketer</option>
-                    <option value="selcmarketing@selcedu.com">Student Services</option>
-                    <option value="selcregistration@selcedu.com">Registrar</option>
-                    <option value="itsupporthelpdesk@selcedu.com">Co-op</option>
-                    <option value="itsupporthelpdesk@selcedu.com">IT</option>
+                    <option selected>{translations.contact.depart}</option>
+                    <option value="tayyab.dev12@gmail.com">{translations.contact.option1}</option>
+                    <option value="selcmarketing@selcedu.com">{translations.contact.option2}</option>
+                    <option value="selcregistration@selcedu.com">{translations.contact.option3}</option>
+                    <option value="itsupporthelpdesk@selcedu.com">{translations.contact.option4}</option>
+                    <option value="itsupporthelpdesk@selcedu.com">{translations.contact.option5}</option>
                   </select>
                   <div className='w-full cursor-pointer'>
                   <p className="w-full py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" onClick={() => setIsNextClick(!isNextClick)}>
@@ -251,19 +290,19 @@ setIsSuccessModalOpen(false);
                   <>
                   {isClose &&
                     <div class="bg-blue-100 border border-blue-100 text-gray-500 px-4 py-3 rounded relative" role="alert">
-                      <h1 className='font-bold text-[20px]'>Note</h1>
-                      <span class="block sm:inline">Please note that requests might take upto 24 hours to process. Thank you for your patience!</span>
+                      <h1 className='font-bold text-[20px]'>{translations.contact.note}</h1>
+                      <span class="block sm:inline">{translations.contact.para}</span>
                       <span class="absolute top-0 bottom-0 right-0 px-4 py-3" onClick={() => setIsClose(false)}>
                         <svg class="fill-current h-6 w-6 text-gray-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
                       </span>
                     </div>
                   }
                   <div className="sm:col-span-2">
-                      <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                      <textarea id="message" rows="6" name='message' value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                      <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">{translations.contact.message}</label>
+                      <textarea id="message" rows="6" name='message' value={formData.message} onChange={handleChange} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder={translations.contact.messageComment}></textarea>
                   </div>
                   <button type="submit" disabled={isClick} className={`flex items-center gap-2 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${isClick ? 'bg-opacity-50': ''}`}>
-                    Send message
+                    {translations.contact.sendmessage}
                     {isClick &&
                     <svg aria-hidden="true" class="w-6 h-6 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-gray-400" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
