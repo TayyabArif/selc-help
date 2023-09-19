@@ -40,13 +40,14 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick, visitCount}) 
           </h5>
         </div>
         <div className="relative flex w-full justify-center h-[25%]" id="watchButton">
-          <p
+          <button
             onClick={openModal}
-            class="inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-center text-white bg-branding rounded-lg focus:ring-4 focus:outline-none h-[20%] cursor-pointer"
+            class={`inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-center text-white bg-branding rounded-lg focus:ring-4 focus:outline-none h-[20%] cursor-pointer ${!data.video && !data.doc ? "opacity-50": ""}`}
+            disabled={!data.video && !data.doc}
           >
             {translations.portalCards.watchButton}
             <Image src="/arrowRight.svg" alt="arrowRight" width={14} height={14} className="ml-2"/>
-          </p>
+          </button>
           {visitCount < 4  && stepCount === 4 &&
                 <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:-top-[100%] top-[130%] md:left-[80%] -left-[10%] z-10 card-animation1">
                   <div className="triangle-left"></div>
@@ -59,7 +60,7 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick, visitCount}) 
                 </div>
               }
         </div>
-        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} redirect={data?.redirect} text={data.text} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} />
+        <VideoModal isOpen={modalOpen} onClose={closeModal} video = {data.video} redirect={data?.redirect} text={data.text} setIsNotLikeVideo={setIsNotLikeVideo} doc = {data.doc} setIsLoginClick={setIsLoginClick} />
         {/* <div id="video_modal"></div> */}
       </div>
     </div>

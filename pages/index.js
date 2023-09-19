@@ -33,13 +33,16 @@ export default function Home() {
     heading: translations.portalCards.step1,
     image: "/steps/login.png",
     video: "/steps/login.mp4",
+    doc: "/How-to-Login.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
+
   const securityQuestion = {
     heading: translations.portalCards.step2,
     image: "/steps/secure-profile.png",
     video: "/steps/secure-profile.mp4",
+    doc: "/How-to-Login.pdf",
     redirect: "https://www.myselcedu.com/profile/setup/",
     text: translations.portalCards.link2,
   };
@@ -47,26 +50,97 @@ export default function Home() {
     heading: translations.portalCards.step3,
     image: "/steps/update.png",
     video: "/steps/profile.mp4",
+    doc: "/How-to-Login.pdf",
     redirect: "https://www.myselcedu.com/profile/requests/?r=109",
     text: translations.portalCards.link3,
   };
+
   const portalUse = {
-    heading: translations.portalCards.step3,
+    heading: translations.portalCards.step4,
     image: "/steps/portal1.png",
     video: "/steps/portal.mp4",
+    doc: "/learning-through-portal.pdf",
     redirect: "https://www.myselcedu.com/",
     text: translations.portalCards.link4,
   };
   const officeloginStep = {
     heading: translations.portalCards.officeStep,
-    steps: [
-      "Microsoft 365 is our cloud-powered productivity platform. ​​",
-      "The latest productivity apps, such as Microsoft Teams, Word, Excel, PowerPoint, Outlook, OneDrive, and so much more.​",
-      "The ability to install on PCs, Macs, tablets, and phones"
-    ],
     image: "/steps/mslogin1.png",
     video: "/steps/msoffice.mp4",
+    doc: "/Microsoft-Office.pdf",
     redirect: "https://www.office.com/",
+    text: translations.portalCards.link1,
+  };
+  const moodleStep = {
+    heading: translations.portalCards.moodleStep,
+    image: "/steps/login.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const adminStep = {
+    heading: translations.portalCards.adminStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const registrationStep = {
+    heading: translations.portalCards.registrationStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const studentServicesStep = {
+    heading: translations.portalCards.SSstep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: "/Student-Services.pdf",
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const financeStep = {
+    heading: translations.portalCards.financeStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: "/Finance.pdf",
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const coopStep = {
+    heading: translations.portalCards.coopStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: "/co-op.pdf",
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const policiesStep = {
+    heading: translations.portalCards.policiesStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const faqstep = {
+    heading: translations.portalCards.faqStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
+    text: translations.portalCards.link1,
+  };
+  const advisorStep = {
+    heading: translations.portalCards.advisorStep,
+    image: "/coming-soon1.png",
+    video: null,
+    doc: null,
+    redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
   const [formData, setFormData] = useState({
@@ -151,7 +225,7 @@ setIsSuccessModalOpen(false);
               heading={translations.mainCards.moodle}
               image="/learning.svg"
               setIsLoginClick={setIsLoginClick}
-              value="login"
+              value="moodle"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -171,7 +245,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/icon-admin.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="admin"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -181,7 +255,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/registration.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="registration"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -191,7 +265,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/service.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="ss"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -201,7 +275,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/finance.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="finance"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -211,7 +285,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/development.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="coop"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -221,7 +295,7 @@ setIsSuccessModalOpen(false);
               subhead="Please follow our step by step guide"
               image="/policies.svg"
               setIsLoginClick={setIsLoginClick}
-              value="ms"
+              value="policies"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -241,7 +315,17 @@ setIsSuccessModalOpen(false);
               subhead="Feel free to contact us"
               image="/question.svg"
               setIsLoginClick={setIsLoginClick}
-              value="contact"
+              value="faq"
+              isNotLikeVideo={isNotLikeVideo}
+              setIsNotLikeVideo={setIsNotLikeVideo}
+            />
+            <Card
+              bg="card12"
+              heading={translations.mainCards.advisor}
+              subhead="Feel free to contact us"
+              image="/advisorlogo.svg"
+              setIsLoginClick={setIsLoginClick}
+              value="advisor"
               isNotLikeVideo={isNotLikeVideo}
               setIsNotLikeVideo={setIsNotLikeVideo}
             />
@@ -259,6 +343,51 @@ setIsSuccessModalOpen(false);
         {isloginClick === "ms" &&
         <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
         <LoginGuideCard data={officeloginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "moodle" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={moodleStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "admin" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={adminStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "registration" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={registrationStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "ss" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={studentServicesStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "finance" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={financeStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "coop" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={coopStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "policies" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={policiesStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "faq" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={faqstep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+        </div>
+        }
+        {isloginClick === "advisor" &&
+        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
+          <LoginGuideCard data={advisorStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
         </div>
         }
         {isloginClick === "contact" &&

@@ -72,7 +72,7 @@ const Hero = ({visitCount}) => {
               }
               </div>
             </div>
-            <div className="flex w-full">
+            {/* <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <Image
                   src="/Illustration1.png"
@@ -82,6 +82,18 @@ const Hero = ({visitCount}) => {
                   height={383}
                   layout="responsive"
                 />
+              </motion.div>
+            </div> */}
+            <div className="flex w-full">
+              <motion.div className="h-full w-full" variants={scrollAnimation}>
+                <iframe
+                  width="100%"
+                  height="120%"
+                  src="https://www.youtube.com/embed/RbLwxERCTNM"
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
               </motion.div>
             </div>
           </motion.div>
