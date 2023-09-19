@@ -32,33 +32,34 @@ export default function Home() {
   const loginStep = {
     heading: translations.portalCards.step1,
     image: "/steps/login.png",
-    video: "/steps/login.mp4",
+    // video: "/steps/login.mp4",
+    video: null,
     doc: "/How-to-Login.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
 
-  const securityQuestion = {
-    heading: translations.portalCards.step2,
-    image: "/steps/secure-profile.png",
-    video: "/steps/secure-profile.mp4",
-    doc: "/How-to-Login.pdf",
-    redirect: "https://www.myselcedu.com/profile/setup/",
-    text: translations.portalCards.link2,
-  };
-  const updateProfile = {
-    heading: translations.portalCards.step3,
-    image: "/steps/update.png",
-    video: "/steps/profile.mp4",
-    doc: "/How-to-Login.pdf",
-    redirect: "https://www.myselcedu.com/profile/requests/?r=109",
-    text: translations.portalCards.link3,
-  };
-
+  // const securityQuestion = {
+  //   heading: translations.portalCards.step2,
+  //   image: "/steps/secure-profile.png",
+  //   video: "/steps/secure-profile.mp4",
+  //   doc: "/How-to-Login.pdf",
+  //   redirect: "https://www.myselcedu.com/profile/setup/",
+  //   text: translations.portalCards.link2,
+  // };
+  // const updateProfile = {
+  //   heading: translations.portalCards.step3,
+  //   image: "/steps/update.png",
+  //   video: "/steps/profile.mp4",
+  //   doc: "/How-to-Login.pdf",
+  //   redirect: "https://www.myselcedu.com/profile/requests/?r=109",
+  //   text: translations.portalCards.link3,
+  // };
   const portalUse = {
     heading: translations.portalCards.step4,
     image: "/steps/portal1.png",
-    video: "/steps/portal.mp4",
+    // video: "/steps/portal.mp4",
+    video: null,
     doc: "/learning-through-portal.pdf",
     redirect: "https://www.myselcedu.com/",
     text: translations.portalCards.link4,
@@ -66,22 +67,15 @@ export default function Home() {
   const officeloginStep = {
     heading: translations.portalCards.officeStep,
     image: "/steps/mslogin1.png",
-    video: "/steps/msoffice.mp4",
+    // video: "/steps/msoffice.mp4",
+    video: null,
     doc: "/Microsoft-Office.pdf",
     redirect: "https://www.office.com/",
     text: translations.portalCards.link1,
   };
-  const moodleStep = {
-    heading: translations.portalCards.moodleStep,
-    image: "/steps/login.png",
-    video: null,
-    doc: null,
-    redirect: "https://www.myselcedu.com/login/",
-    text: translations.portalCards.link1,
-  };
   const adminStep = {
     heading: translations.portalCards.adminStep,
-    image: "/coming-soon1.png",
+    image: "/coming-soon2.png",
     video: null,
     doc: null,
     redirect: "https://www.myselcedu.com/login/",
@@ -97,7 +91,7 @@ export default function Home() {
   };
   const studentServicesStep = {
     heading: translations.portalCards.SSstep,
-    image: "/coming-soon1.png",
+    image: "/ssimage.png",
     video: null,
     doc: "/Student-Services.pdf",
     redirect: "https://www.myselcedu.com/login/",
@@ -105,7 +99,7 @@ export default function Home() {
   };
   const financeStep = {
     heading: translations.portalCards.financeStep,
-    image: "/coming-soon1.png",
+    image: "/financeimage.png",
     video: null,
     doc: "/Finance.pdf",
     redirect: "https://www.myselcedu.com/login/",
@@ -113,7 +107,7 @@ export default function Home() {
   };
   const coopStep = {
     heading: translations.portalCards.coopStep,
-    image: "/coming-soon1.png",
+    image: "/co-op.png",
     video: null,
     doc: "/co-op.pdf",
     redirect: "https://www.myselcedu.com/login/",
@@ -137,9 +131,9 @@ export default function Home() {
   };
   const advisorStep = {
     heading: translations.portalCards.advisorStep,
-    image: "/coming-soon1.png",
+    image: "/marketing.png",
     video: null,
-    doc: null,
+    doc: "/marketing.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
@@ -335,19 +329,16 @@ setIsSuccessModalOpen(false);
         {isloginClick === "login" &&
           <div className='px-10 flex md:flex-wrap md:flex-row flex-col items-center justify-center w-full mt-5 gap-5 my-5'>
             <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} visitCount={visitCount} />
-            <LoginGuideCard data={securityQuestion} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
-            <LoginGuideCard data={updateProfile} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
+          </div>
+        }
+        {isloginClick === "moodle" &&
+          <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
             <LoginGuideCard data={portalUse} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
           </div>
         }
         {isloginClick === "ms" &&
         <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
         <LoginGuideCard data={officeloginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
-        </div>
-        }
-        {isloginClick === "moodle" &&
-        <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
-          <LoginGuideCard data={moodleStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
         </div>
         }
         {isloginClick === "admin" &&

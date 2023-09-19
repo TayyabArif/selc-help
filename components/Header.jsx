@@ -58,9 +58,9 @@ const Header = ({visitCount, isArrive}) => {
         }
       >
         <nav className="px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="hidden md:flex col-start-1 col-end-2 items-center">
+          <a href="#" className="hidden md:flex col-start-1 col-end-2 items-center">
             <Image src="/selc-logo.png" alt="selc logo" width={170} height={170} />
-          </div>
+          </a>
           <ul className="hidden md:flex col-start-4 col-end-6 text-gray-500  items-center">
             <LinkScroll
               activeClass="active"
