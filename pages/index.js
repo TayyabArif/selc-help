@@ -83,7 +83,7 @@ export default function Home() {
   };
   const registrationStep = {
     heading: translations.portalCards.registrationStep,
-    image: "/coming-soon1.png",
+    image: "/coming-soon2.png",
     video: null,
     doc: null,
     redirect: "https://www.myselcedu.com/login/",
@@ -115,7 +115,7 @@ export default function Home() {
   };
   const policiesStep = {
     heading: translations.portalCards.policiesStep,
-    image: "/coming-soon1.png",
+    image: "/coming-soon2.png",
     video: null,
     doc: null,
     redirect: "https://www.myselcedu.com/login/",
@@ -123,7 +123,7 @@ export default function Home() {
   };
   const faqstep = {
     heading: translations.portalCards.faqStep,
-    image: "/coming-soon1.png",
+    image: "/coming-soon2.png",
     video: null,
     doc: null,
     redirect: "https://www.myselcedu.com/login/",
