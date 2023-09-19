@@ -10,7 +10,7 @@ const Card = ({bg, heading, image, redirect, setIsLoginClick, value, isNotLikeVi
 
   return (
     <div
-    className={`block filter ${isNotLikeVideo && value === 'contact' ? 'brightness-100 bounce2' : isNotLikeVideo && value !== 'contact'  ? 'brightness-50': '' } max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative group transition-transform transform hover:scale-110 lg:w-[15%] w-[90%] lg:h-[200px] cursor-pointer`}
+    className={`block filter ${isNotLikeVideo && value === 'contact' ? 'brightness-100 bounce2' : isNotLikeVideo && value !== 'contact'  ? 'brightness-50': '' } max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative group transition-transform transform hover:scale-110 lg:w-[20%] w-[90%] lg:h-[220px] cursor-pointer`}
     onClick={() => {
       setIsLoginClick(value);
       setIsNotLikeVideo(false);

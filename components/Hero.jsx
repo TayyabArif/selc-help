@@ -24,6 +24,21 @@ const Hero = ({visitCount}) => {
       });
     }
   }
+  const [iframeHeight, setIframeHeight] = useState('100%');
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIframeHeight('100%');
+      } else {
+        setIframeHeight('200%');
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div
@@ -32,7 +47,7 @@ const Hero = ({visitCount}) => {
     >
       <ScrollAnimationWrapper>
           <motion.div
-            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 px-8 xl:px-16"
+            className="grid grid-flow-row  grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 px-8 xl:px-16"
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1
@@ -88,7 +103,7 @@ const Hero = ({visitCount}) => {
               <motion.div className="h-full w-full" variants={scrollAnimation}>
                 <iframe
                   width="100%"
-                  height="120%"
+                  height={iframeHeight}
                   src="https://www.youtube.com/embed/RbLwxERCTNM"
                   title="YouTube Video"
                   frameBorder="0"
@@ -99,7 +114,7 @@ const Hero = ({visitCount}) => {
           </motion.div>
       </ScrollAnimationWrapper>
 
-      <div className="relative w-full md:flex hidden py-5 bg-gray-100">
+      <div className="relative w-full md:flex hidden py-5 bg-gray-100 2xl:mt-[10%] mt-[15%]">
       <div className="overflow-hidden w-full">
       <div className="animate-marquee whitespace-nowrap text-gray-600 w-full text-primary font-bold">
         {translations.hero.banner}
