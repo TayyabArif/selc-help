@@ -58,8 +58,8 @@ const Header = ({visitCount, isArrive}) => {
         }
       >
         <nav className="px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <a href="#" className="hidden md:flex col-start-1 col-end-2 items-center">
-            <Image src="/selc-logo.png" alt="selc logo" width={170} height={170} />
+          <a href="#" className="flex col-start-1 col-end-2 items-center">
+            <Image src="/selc-logo.png" alt="selc logo" width={170} height={170} className="md:w-full w-1/2"/>
           </a>
           <ul className="hidden md:flex col-start-4 col-end-6 text-gray-500  items-center">
             <LinkScroll
@@ -98,7 +98,7 @@ const Header = ({visitCount, isArrive}) => {
             >
                {translations.header.help}
             </LinkScroll>
-            {/* <LinkScroll
+            <LinkScroll
               activeClass="active"
               to="target_faq"
               spy={true}
@@ -115,7 +115,7 @@ const Header = ({visitCount, isArrive}) => {
               }
             >
               {translations.header.faq}
-            </LinkScroll> */}
+            </LinkScroll>
           </ul>
           <div className="flex items-center gap-10 md:col-start-11 md:col-end-12">
             <div className="flex relative">
@@ -145,7 +145,7 @@ const Header = ({visitCount, isArrive}) => {
               }
 
             </div>
-            <div className="flex relative" id="portal">
+            <div className="hidden md:flex relative" id="portal">
               <div className="md:col-start-9 md:col-end-10 font-medium flex justify-end items-center">
                 <Link href="https://www.myselcedu.com/login/" target="_blank" rel="noopener noreferrer">
                 <button

@@ -30,12 +30,21 @@
     "step2": "boan peulopil",
     "step3": "peulopil eobdeiteu",
     "step4": "hagsaeng poteol tamsaeg",
+    "moodleStep": "Moodle-ui doum badgi",
+    "adminStep": "gwanli/lisebsyeon-e yeongyeol",
+    "registrationStep": "deunglog buseolo idong",
+    "SSstep": "hagsaeng seobiseulobuteo doum badgi",
+    "financeStep": "geum-yung siseutem",
+    "coopStep": "hyeobdongjohabgwa gyeonglyeoggaebal-ilan mueos-inga",
+    "policiesStep": "uli jeongchaeg-e daehan Leran",
+    "faqStep": "SELCe daehae jaju mudneun jilmun",
     "officeStep": "Office 365lo saengsanseong hyangsang",
-    "watchButton": "bidioleulboda",
+    "advisorStep": "choegoui jo-eonjawa yeongyeol",
+    "watchButton": "yeogileul keullighaseyo",
     "link1": "logeu-in peijileul bangmunhalyeomyeon lingkeuleul keullighaseyo.",
     "link2": "boan jilmun-eul chugahalyeomyeon lingkeuleul keullighaseyo.",
     "link3": "peulopil jeongboleul eobdeiteuhalyeomyeon lingkeuleul keullighaseyo.",
-    "link4": "laending peijileul bangmunhalyeomyeon lingkeuleul keullighaseyo."
+    "link4": "bangmun peijileul bangmunhalyeomyeon lingkeuleul keullighaseyo."
   },
   "faq": {
     "heading1": "jaju mudneun jilmun",

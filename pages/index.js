@@ -129,14 +129,75 @@ export default function Home() {
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
-  const advisorStep = {
-    heading: translations.portalCards.advisorStep,
-    image: "/marketing.png",
-    video: null,
-    doc: "/marketing.pdf",
-    redirect: "https://www.myselcedu.com/login/",
-    text: translations.portalCards.link1,
-  };
+
+  const cardsData = [
+    {
+      bg:"card1",
+      heading: translations.mainCards.portal,
+      image: "/identification.svg",
+      value: "login",
+    },
+    {
+      bg:"card2",
+      heading: translations.mainCards.moodle,
+      image: "/learning.svg",
+      value: "moodle",
+    },
+    {
+      bg:"card3",
+      heading: translations.mainCards.office,
+      image: "/microsoft.svg",
+      value: "ms",
+    },
+    {
+      bg:"card4",
+      heading: translations.mainCards.admin,
+      image: "/icon-admin.svg",
+      value: "admin",
+    },
+    {
+      bg: "card5",
+      heading: translations.mainCards.registration,
+      image: "/registration.svg",
+      value: "registration",
+    },
+    {
+      bg: "card6",
+      heading: translations.mainCards.studentService,
+      image: "/service.svg",
+      value: "ss",
+    },
+    {
+      bg: "card7",
+      heading: translations.mainCards.finance,
+      image: "/finance.svg",
+      value: "finance",
+    },
+    {
+      bg: "card8",
+      heading: translations.mainCards.career,
+      image: "/development.svg",
+      value: "coop",
+    },
+    {
+      bg: "card9",
+      heading: translations.mainCards.policies,
+      image: "/policies.svg",
+      value: "policies",
+    },
+    {
+      bg: "card10",
+      heading: translations.mainCards.contact,
+      image: "/hand.svg",
+      value: "contact",
+    },
+    {
+      bg: "card11",
+      heading: translations.mainCards.faq,
+      image: "/question.svg",
+      value: "faq",
+    }
+  ]
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -198,131 +259,26 @@ setIsSuccessModalOpen(false);
     <Layout visitCount={visitCount} isArrive={isArrive}>
       <div className="flex w-full flex-col bg-white h-full mt-20">
         <Hero visitCount={visitCount}/>
-        <div id="cardsSection1" className="h-10">
-        </div>
+        {/* <div id="cardsSection1" className="h-10">
+        </div> */}
         <div id="cardsSection">
         </div>
         <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-20 ${isloginClick ? "mb-0" : "mb-20"}`}>
           <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
-            <Card
-              bg="card1"
-              heading={translations.mainCards.portal}
-              subhead="Please follow our step by step guide"
-              image="/identification.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="login"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card2"
-              heading={translations.mainCards.moodle}
-              image="/learning.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="moodle"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card3"
-              heading={translations.mainCards.office}
-              subhead="Please follow our step by step guide"
-              image="/microsoft.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="ms"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-             <Card
-              bg="card4"
-              heading={translations.mainCards.admin}
-              subhead="Please follow our step by step guide"
-              image="/icon-admin.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="admin"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-             <Card
-              bg="card5"
-              heading={translations.mainCards.registration}
-              subhead="Please follow our step by step guide"
-              image="/registration.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="registration"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card6"
-              heading={translations.mainCards.studentService}
-              subhead="Please follow our step by step guide"
-              image="/service.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="ss"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card7"
-              heading={translations.mainCards.finance}
-              subhead="Please follow our step by step guide"
-              image="/finance.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="finance"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card8"
-              heading={translations.mainCards.career}
-              subhead="Please follow our step by step guide"
-              image="/development.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="coop"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-             <Card
-              bg="card9"
-              heading={translations.mainCards.policies}
-              subhead="Please follow our step by step guide"
-              image="/policies.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="policies"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card10"
-              heading={translations.mainCards.contact}
-              subhead="Feel free to contact us"
-              image="/hand.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="contact"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card11"
-              heading={translations.mainCards.faq}
-              subhead="Feel free to contact us"
-              image="/question.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="faq"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
-            <Card
-              bg="card12"
-              heading={translations.mainCards.advisor}
-              subhead="Feel free to contact us"
-              image="/advisorlogo.svg"
-              setIsLoginClick={setIsLoginClick}
-              value="advisor"
-              isNotLikeVideo={isNotLikeVideo}
-              setIsNotLikeVideo={setIsNotLikeVideo}
-            />
+            {cardsData?.map((data, index) => {
+              return(
+                <Card
+                  key={index}
+                  bg={data.bg}
+                  heading={data.heading}
+                  image={data.image}
+                  setIsLoginClick={setIsLoginClick}
+                  value={data.value}
+                  isNotLikeVideo={isNotLikeVideo}
+                  setIsNotLikeVideo={setIsNotLikeVideo}
+                />
+              )
+            })}
           </div>
         </div>
         <div id="videoButton" className="h-20"></div>

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Modal from 'react-modal';
 import Image from 'next/image';
+import PDFViewer from './PdfViewer';
 
 Modal.setAppElement('#__next'); // Set the app root element
 
@@ -45,23 +46,13 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
     <button className="close-button" onClick={onClose}>
       <Image src="/close.svg" alt="Close" width={24} height={24} />
     </button>
-    <div className="aspect-w-16 aspect-h-9 relative">
+    <div className="aspect-w-16 aspect-h-9 relative overflow-y">
       <a
         href={doc}
         download={doc}
         id="pdfDownloadLink"
         style={{ display: "none" }}
       />
-      {/* <video
-        controls
-        autoPlay
-        className='rounded-md'
-        onEnded={handleVideoEnd}
-        ref={videoRef}
-      >
-        <source src={video} type="video/mp4"/>
-        Your browser does not support the video tag.
-      </video> */}
       {video ? (
         <video
           controls
@@ -74,7 +65,7 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
           Your browser does not support the video tag.
         </video>
       ) : (
-        <iframe src={doc} width="100%" height="500px" title="PDF Document"></iframe>
+        <PDFViewer doc={doc} />
       )}
       <div className='text-gray-800 absolute w-full flex flex-col top-[102%] bg-white rounded-md p-2 justify-center items-center'>
         <p className='text-lg font-bold'>{text}</p>
