@@ -20,7 +20,7 @@ const Faq = ({visitCount}) => {
   return (
     <>
       <section
-        className="w-full mt-8 py-12 bg-gray-50 sm:py-16 lg:py-14 xl:py-14 mb-32"
+        className="w-full mt-8 py-12 bg-gray-50 sm:py-16 lg:py-14 xl:pt-14 xl:pb-[8.5rem]"
         id="target_faq"
       >
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
