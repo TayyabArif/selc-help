@@ -44,7 +44,7 @@ const VideoModal = ({ isOpen, onClose, video, setIsNotLikeVideo, setIsLoginClick
     overlayClassName="overlay"
   >
     <button className="close-button" onClick={onClose}>
-      <Image src="/close.svg" alt="Close" width={24} height={24} />
+      <Image src="/close.svg" alt="Close" width={16} height={16} />
     </button>
     <div className="aspect-w-16 aspect-h-9 relative overflow-y">
       <a

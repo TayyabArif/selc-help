@@ -75,7 +75,7 @@ const Faq = ({visitCount}) => {
               >
                 <div className="px-6 pb-6">
                   <p className={`text-base text-gray-600`}>
-                  {translations.faq.ans1}
+                  {translations.faq.ans1} <b>(O19395639791)</b>
                   </p>
                 </div>
               </div>

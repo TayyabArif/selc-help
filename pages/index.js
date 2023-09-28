@@ -191,12 +191,6 @@ export default function Home() {
       image: "/hand.svg",
       value: "contact",
     },
-    {
-      bg: "card11",
-      heading: translations.mainCards.faq,
-      image: "/question.svg",
-      value: "faq",
-    }
   ]
   const [formData, setFormData] = useState({
     fullName: '',
