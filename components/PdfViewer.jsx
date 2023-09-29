@@ -26,7 +26,7 @@ function PDFViewer({ doc }) {
         title="PDF Document"
         ref={iframeRef}
       ></iframe>
-      <button onClick={openFullscreen} className="w-full text-white text-center bg-primary p-3 font-bold text-xl">Open Full Screen</button>
+      <button onClick={openFullscreen} className="w-full text-white text-center bg-primary p-3 font-bold text-xl">View in Full Screen</button>
     </div>
   );
 }
