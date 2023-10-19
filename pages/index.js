@@ -92,7 +92,7 @@ export default function Home() {
   const studentServicesStep = {
     heading: translations.portalCards.SSstep,
     image: "/ssimage.png",
-    video: null,
+    video: "Student-service.mp4",
     doc: "/Student-Services.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
@@ -100,8 +100,8 @@ export default function Home() {
   const financeStep = {
     heading: translations.portalCards.financeStep,
     image: "/financeimage.png",
-    video: null,
-    doc: "/Finance.pdf",
+    video: "/Finance.mp4",
+    doc: "/Finance1.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };

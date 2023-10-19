@@ -251,11 +251,10 @@ select {
 }
 
 .triangle-left::after {
-  border-right: 11px solid rgba(249, 115, 22, 0.7); /* Right side of the arrow */
-  border-top: 11px solid transparent; /* Top side of the arrow */
-  border-bottom: 11px solid transparent; /* Bottom side of the arrow */
+  border-right: 11px solid rgba(249, 115, 22, 0.7);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
   content: "";
-  /* display: inline-block; */
   position: absolute;
   right: 0;
   left: -103%;
