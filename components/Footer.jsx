@@ -39,7 +39,7 @@ const Footer = () => {
       />
     </svg>
       <div className='flex flex-col md:w-[50%] w-full pt-10'>
-        <img src="https://cdn-ecapl.nitrocdn.com/ZjKOAmOIwkrmZnKyWUQZWPaGEUejoOFO/assets/images/optimized/rev-e96bfb6/selcedu.com/wp-content/uploads/2022/09/SELC-college-logo-horizontal-transparent-white.png"
+        <img src="/footerLogo.png"
           alt="logo" className='md:w-[50%] w-full md:ml-0 -ml-4 cursor-pointer' onClick={() => router.push('/')}/>
         <div className='flex md:justify-start justify-center gap-5 md:ml-10 md:mt-5 mt-8'>
           <a href="https://www.twitter.com/selccollege" target="_blank" rel="noopener noreferrer">
