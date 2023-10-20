@@ -38,23 +38,6 @@ export default function Home() {
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
-
-  // const securityQuestion = {
-  //   heading: translations.portalCards.step2,
-  //   image: "/steps/secure-profile.png",
-  //   video: "/steps/secure-profile.mp4",
-  //   doc: "/How-to-Login.pdf",
-  //   redirect: "https://www.myselcedu.com/profile/setup/",
-  //   text: translations.portalCards.link2,
-  // };
-  // const updateProfile = {
-  //   heading: translations.portalCards.step3,
-  //   image: "/steps/update.png",
-  //   video: "/steps/profile.mp4",
-  //   doc: "/How-to-Login.pdf",
-  //   redirect: "https://www.myselcedu.com/profile/requests/?r=109",
-  //   text: translations.portalCards.link3,
-  // };
   const portalUse = {
     heading: translations.portalCards.step4,
     image: "/steps/portal1.png",
@@ -149,18 +132,18 @@ export default function Home() {
       image: "/microsoft.svg",
       value: "ms",
     },
-    {
-      bg:"card4",
-      heading: translations.mainCards.admin,
-      image: "/icon-admin.svg",
-      value: "admin",
-    },
-    {
-      bg: "card5",
-      heading: translations.mainCards.registration,
-      image: "/registration.svg",
-      value: "registration",
-    },
+    // {
+    //   bg:"card4",
+    //   heading: translations.mainCards.admin,
+    //   image: "/icon-admin.svg",
+    //   value: "admin",
+    // },
+    // {
+    //   bg: "card5",
+    //   heading: translations.mainCards.registration,
+    //   image: "/registration.svg",
+    //   value: "registration",
+    // },
     {
       bg: "card6",
       heading: translations.mainCards.studentService,
