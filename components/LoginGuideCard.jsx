@@ -49,11 +49,13 @@ const LoginGuideCard = ({data, setIsNotLikeVideo, setIsLoginClick, visitCount}) 
             <Image src="/arrowRight.svg" alt="arrowRight" width={14} height={14} className="ml-2"/>
           </button>
           {visitCount < 4  && stepCount === 4 &&
-                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:-top-[100%] top-[130%] md:left-[80%] -left-[10%] z-10 card-animation1">
-                  <div className="triangle-left"></div>
-                 <h2 class="text-xl font-semibold mb-2">4/4</h2>
-                  <h2 class="text-xl font-semibold mb-2">How video help you?</h2>
-                  <p class="mb-6">Click on watch video for every step and you'll get a video guide how to use portal</p>
+                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute lg:w-[350px] md:w-[280px] w-[250px] md:-top-[100%] top-[200%] md:left-[80%] -left-[10%] z-10 card-animation1">
+                  <div className={window.innerWidth < 768 ? 'triangle-top' : 'triangle-left'}></div>
+                 <h2 class="text-xl font-semibold mb-2">
+                  {window.innerWidth < 768 ? '3/3' : '4/4'}
+                  </h2>
+                  <h2 class="md:text-xl text-base font-semibold mb-2">How video help you?</h2>
+                  <p class="md:text-base text-sm mb-6">Click on watch video for every step and you'll get a video guide how to use portal</p>
                   <div class="flex justify-end gap-5 mt-4">
                     <button class="px-4 py-2 bg-primary hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Finish</button>
                   </div>

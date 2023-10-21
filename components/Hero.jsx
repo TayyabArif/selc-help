@@ -15,13 +15,25 @@ const Hero = ({visitCount}) => {
   const htmlContent = { __html: translations.hero.welcomeMessage };
   const { stepCount, incrementStep, handleSkip } = useTour();
   const handleNext = () => {
-    incrementStep();
-    const cardsSection = document.getElementById('portal');
-    if (cardsSection) {
-      cardsSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+    if(window.innerWidth < 768) {
+      incrementStep(2);
+      const cardsSection = document.getElementById('target_faq');
+      if (cardsSection) {
+        cardsSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }
+    else {
+      incrementStep();
+      const cardsSection = document.getElementById('portal');
+      if (cardsSection) {
+        cardsSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     }
   }
   const [iframeHeight, setIframeHeight] = useState('100%');
@@ -54,7 +66,7 @@ const Hero = ({visitCount}) => {
                   className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-600 leading-normal"
                   dangerouslySetInnerHTML={htmlContent}
                 />
-              <p className="text-gray-500 mt-4 mb-6">
+              <p className="text-gray-500 mt-4 mb-6"  id="about1">
               {translations.hero.desc}
               </p>
               <div className="relative flex">
@@ -74,11 +86,11 @@ const Hero = ({visitCount}) => {
             </button>
               </LinkScroll>
               {visitCount < 4  && stepCount === 2 &&
-                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] md:-top-[100%] top-[130%] md:left-[110%] left-[0%] z-10 card-animation1">
-                  <div className="triangle-left"></div>
-                 <h2 class="text-xl font-semibold mb-2">2/4</h2>
-                  <h2 class="text-xl font-semibold mb-2">Check our help desk</h2>
-                  <p class="mb-6">Get your queries done in seconds</p>
+                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute md:w-[350px] w-[250px] md:-top-[100%] top-[130%] md:left-[110%] left-[0%] z-10 card-animation1">
+                  <div className={window.innerWidth < 768 ? 'triangle-top' : 'triangle-left'}></div>
+                 <h2 class="text-xl font-semibold mb-2">{window.innerWidth < 768 ? '2/3' : '2/4'}</h2>
+                  <h2 class="md:text-xl text-base font-semibold mb-2">Check our help desk</h2>
+                  <p class="md:text-base text-sm mb-6">Get your queries done in seconds</p>
                   <div class="flex justify-end gap-5 mt-4">
                     <button class="px-4 py-2 hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Skip Tour</button>
                     <button class="px-4 py-0 bg-primary text-white rounded focus:outline-none" onClick={handleNext}>Next</button>

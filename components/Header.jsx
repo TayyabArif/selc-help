@@ -28,7 +28,11 @@ const Header = ({visitCount, isArrive}) => {
   const handleNext = (value) => {
     incrementStep();
     if (value === "language") {
-      const cardsSection = document.getElementById('about');
+      let cardsSection
+      if (window.innerWidth < 768)
+        cardsSection = document.getElementById('about1');
+      else
+        cardsSection = document.getElementById('about');
       if (cardsSection) {
         cardsSection.scrollIntoView({
           behavior: 'smooth',
@@ -132,11 +136,11 @@ const Header = ({visitCount, isArrive}) => {
                 </select>
               </div>
               {isArrive && visitCount < 5 && stepCount === 1 &&
-                <div class=" bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] top-[140%] md:-left-[100%] -left-[10%] z-10 card-animation">
+                <div class=" bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute md:w-[350px] w-[250px] top-[140%] md:-left-[100%] -left-[100%] z-10 card-animation">
                   <div className="triangle-top"></div>
-                  <h2 class="text-xl font-semibold mb-2">1/4</h2>
-                  <h2 class="text-xl font-semibold mb-2">Use different languages</h2>
-                  <p class="mb-6">Change language according to your choice</p>
+                  <h2 class="text-xl font-semibold mb-2">{window.innerWidth < 768 ? '1/3' : '1/4'}</h2>
+                  <h2 class="md:text-xl text-base font-semibold mb-2">Use different languages</h2>
+                  <p class="md:text-base text-sm mb-6">Change language according to your choice</p>
                   <div class="flex justify-end gap-5 mt-4">
                     <button class="px-4 py-2 hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Skip Tour</button>
                     <button class="px-4 py-0 bg-primary text-white rounded focus:outline-none" onClick={() => handleNext("language")}>Next</button>

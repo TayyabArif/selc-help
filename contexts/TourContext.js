@@ -5,8 +5,11 @@ const TourContext = createContext();
 export function TourProvider({ children }) {
   const [stepCount, setStepCount] = useState(1);
 
-  const incrementStep = () => {
-    setStepCount(stepCount + 1);
+  const incrementStep = (value) => {
+    if(value === 2)
+      setStepCount(stepCount + 2);
+    else
+      setStepCount(stepCount + 1);
   };
   const handleSkip = () => {
     setStepCount(6);

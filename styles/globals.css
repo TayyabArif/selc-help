@@ -289,7 +289,7 @@ select {
     content: "";
     display: inline-block;
     position: absolute;
-    right: 70%;
+    right: -40%;
     left: 0;
     margin-right: auto;
     margin-left: auto;
