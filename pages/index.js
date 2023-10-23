@@ -98,9 +98,9 @@ export default function Home() {
   };
   const policiesStep = {
     heading: translations.portalCards.policiesStep,
-    image: "/coming-soon2.png",
+    image: "/policies.png",
     video: null,
-    doc: null,
+    doc: "/policies.pdf",
     redirect: "https://www.myselcedu.com/login/",
     text: translations.portalCards.link1,
   };
