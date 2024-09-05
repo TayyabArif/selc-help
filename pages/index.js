@@ -274,7 +274,7 @@ setIsSuccessModalOpen(false);
   return (
     <Layout visitCount={visitCount} isArrive={isArrive}>
       <div className="flex w-full flex-col bg-white h-full mt-20">
-        <Hero visitCount={visitCount}/>
+        {/* <Hero visitCount={visitCount}/> */}
         {/* <div id="cardsSection1" className="h-10">
         </div> */}
         <div id="cardsSection">
@@ -297,19 +297,7 @@ setIsSuccessModalOpen(false);
             })}
           </div>
         </div> */}
-        {visitCount < 4 && stepCount === 3 &&
-                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] top-[140%] md:-left-[80%] -left-[100%] card-animation3">
-                  <div className="triangle-top"></div>
-                  <h2 class="text-xl font-semibold mb-2">3/4</h2>
-                  <h2 class="text-xl font-semibold mb-2">Visit SELC portal</h2>
-                  <p class="mb-6">Visit the student portal once you get knowledge</p>
-                  <div class="flex justify-end gap-5 mt-4">
-                    <button class="px-4 py-2 hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Skip Tour</button>
-                    <button class="px-4 py-0 bg-primary text-white rounded focus:outline-none" onClick={() => handleNext("portal")}>Next</button>
-                  </div>
-                </div>
-              }
-        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-44 ${isloginClick ? "mb-0" : "mb-20"}`}>
+        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-44 mb-[150px]`}>
           <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
             {coopCardData?.map((data, index) => {
               return(
@@ -327,7 +315,7 @@ setIsSuccessModalOpen(false);
           </div>
         </div>
         {isCoopMainClick && 
-          <div id="cardsSection2" className={`flex flex-col w-full justify-center`}>
+          <div id="cardsSection2" className={`flex flex-col w-full justify-center mb-[100px]`}>
             <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
               {coopsubCardData?.map((data, index) => {
                 return(
@@ -459,7 +447,7 @@ setIsSuccessModalOpen(false);
               <SuccessModal isOpen={isSuccessModalOpen} onClose={handleCloseModal} />
           </div>
         } */}
-        <Faq visitCount={visitCount}/>
+        {/* <Faq visitCount={visitCount}/> */}
       </div>
     </Layout>
   );

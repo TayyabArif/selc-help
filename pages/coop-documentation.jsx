@@ -544,7 +544,7 @@ const CoopDocumentation = () => {
                     </span>
                 </div>
     </Accordion>
-    <Accordion title="Co-op Documents for Digital Marketing Specialist (Co-op)">
+    <Accordion title="Co-op Documents for Digital Marketing Professional (Co-op)">
                 <div style={{ textAlign: 'left' }}>
                 <Image
                     style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
@@ -558,7 +558,7 @@ const CoopDocumentation = () => {
                 <div style={{ textAlign: 'left' }}>
                     <span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         Hello students,<br /><br />
-                        Please find the Co-op Documents for <strong>Digital Marketing Specialist (Co-op)</strong> to be submitted through your co-op portion.
+                        Please find the Co-op Documents for <strong>Digital Marketing Professional (Co-op)</strong> to be submitted through your co-op portion.
                     </span>
                 </div>
 
@@ -812,7 +812,7 @@ const CoopDocumentation = () => {
                     </span>
                 </div>
     </Accordion>
-    <Accordion title="Co-op Documents for Supply Chain Management Specialist Co-op">
+    <Accordion title="Co-op Documents for Supply Chain Management Professional Co-op">
                 <div style={{ textAlign: 'left' }}>
                 <Image
                     style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
@@ -826,7 +826,7 @@ const CoopDocumentation = () => {
                 <div style={{ textAlign: 'left' }}>
                     <span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         Hello students,<br /><br />
-                        Please find the Co-op Documents for <strong>Supply Chain Management Specialist Co-op</strong> to be submitted through your co-op portion.
+                        Please find the Co-op Documents for <strong>Supply Chain Management Professional Co-op</strong> to be submitted through your co-op portion.
                     </span>
                 </div>
 

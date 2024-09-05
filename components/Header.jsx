@@ -151,7 +151,7 @@ const Header = ({visitCount, isArrive}) => {
             </div>
             <div className="hidden md:flex relative" id="portal">
               <div className="md:col-start-9 md:col-end-10 font-medium flex justify-end items-center">
-                <Link href="https://www.myselcedu.com/login/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://selcedu.classe365.com/" target="_blank" rel="noopener noreferrer">
                 <button
                   className={
                     "py-2.5 lg:py-2 px-6 text-white font-semibold md:text-base text-xs rounded-lg bg-orange-500 hover:shadow-primary-md hover:bg-primary transition-all outline-none "
