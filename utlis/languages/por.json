@@ -11,6 +11,25 @@
     "button": "Iniciar",
     "banner": "Capacitando os alunos para um futuro melhor. Capacitando os alunos para um futuro melhor. Capacitando os alunos para um futuro melhor"
   },
+  "coopCards": {
+    "portal": "Portal de Coop/Estágio",
+    "moodle": "Aprendizado através do Moodle",
+    "office": "Conta de Estudante do MS Office",
+    "admin": "Administração/Recepção",
+    "registration": "Departamento de Registro",
+    "studentService": "Serviços ao Estudante",
+    "finance": "Departamento Financeiro",
+    "career": "Coop & Desenvolvimento de Carreira",
+    "policies": "Procedimentos e Políticas da Faculdade",
+    "contact": "Contate-nos",
+    "faq": "Perguntas Frequentes",
+    "advisor": "Consultor de Marketing",
+    "learn": "Ver Mais",
+    "learnLess": "Ocultar Subseções",
+    "coopprocedure": "Procedimentos e Políticas de Coop",
+    "coopfaq": "Perguntas Frequentes sobre Coop",
+    "coopparticum": "Documentação de Coop/Estágio"
+  },
   "mainCards": {
     "portal": "Portal do aluno",
     "moodle": "Aprendendo através do Moodle",

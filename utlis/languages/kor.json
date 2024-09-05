@@ -11,6 +11,25 @@
     "button": "sijaghada",
     "banner": "deo balg-eun milaeleul hyanghae hagsaengdeul-ui yeoglyang-eul ganghwahabnida. deo balg-eun milaeleul hyanghae hagsaengdeul-ui yeoglyang-eul ganghwahabnida. deo balg-eun milaeleul hyanghan hagsaengdeul-ui yeoglyang ganghwa"
   },
+  "coopCards": {
+    "portal": "Ko-eop/ Silseup",
+    "moodle": "Mudle-eul tonghan hakseup",
+    "office": "MS Opise haksaeng gyaejeong",
+    "admin": "Gwanli/ Jeobsu",
+    "registration": "Deunglog buseo",
+    "studentService": "Haksaeng seobiseu",
+    "finance": "Jaemu buseo",
+    "career": "Ko-eop & Gyeonglyeok gaebal",
+    "policies": "Daehak jeolcha mit jeongchaek",
+    "contact": "Mun-ui",
+    "faq": "Jaju mun-ui",
+    "advisor": "Maketting-eu adbaijeo",
+    "learn": "Deo bogi",
+    "learnLess": "Sabeu segsyeon sumgigi",
+    "coopprocedure": "Ko-eop jeongchaek mit jeolcha",
+    "coopfaq": "Ko-eop jaju mun-ui",
+    "coopparticum": "Ko-eop/ Silseup munseo"
+  },
   "mainCards": {
     "portal": "hagsaeng poteol",
     "moodle": "mudeul-eul tonghan hagseub",

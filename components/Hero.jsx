@@ -26,8 +26,8 @@ const Hero = ({visitCount}) => {
       }
     }
     else {
-      incrementStep();
-      const cardsSection = document.getElementById('portal');
+      incrementStep(3);
+      const cardsSection = document.getElementById('cardsSection');
       if (cardsSection) {
         cardsSection.scrollIntoView({
           behavior: 'smooth',
@@ -72,7 +72,7 @@ const Hero = ({visitCount}) => {
               <div className="relative flex">
               <LinkScroll
               activeClass="active"
-              to="cardsSection1"
+              to="cardsSection"
               spy={true}
               smooth={true}
               duration={1000}

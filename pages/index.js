@@ -7,6 +7,8 @@ import SuccessModal from '@/components/SuccessModal';
 import Hero from "@/components/Hero";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTour } from '@/contexts/TourContext';
+import CoopCard from "@/components/CoopCard";
+import CoopSubCards from "@/components/CoopSubCards";
 
 export default function Home() {
   const { selectedLanguage } = useLanguage();
@@ -132,18 +134,6 @@ export default function Home() {
       image: "/microsoft.svg",
       value: "ms",
     },
-    // {
-    //   bg:"card4",
-    //   heading: translations.mainCards.admin,
-    //   image: "/icon-admin.svg",
-    //   value: "admin",
-    // },
-    // {
-    //   bg: "card5",
-    //   heading: translations.mainCards.registration,
-    //   image: "/registration.svg",
-    //   value: "registration",
-    // },
     {
       bg: "card6",
       heading: translations.mainCards.studentService,
@@ -173,6 +163,55 @@ export default function Home() {
       heading: translations.mainCards.contact,
       image: "/hand.svg",
       value: "contact",
+    },
+  ]
+  const coopCardData = [
+    {
+      bg:"card1",
+      heading: translations?.coopCards?.portal,
+      image: "/identification.svg",
+      value: "login",
+    },
+    // {
+    //   bg:"card2",
+    //   heading: translations.mainCards.moodle,
+    //   image: "/learning.svg",
+    //   value: "moodle",
+    // },
+    // {
+    //   bg:"card3",
+    //   heading: translations.mainCards.office,
+    //   image: "/microsoft.svg",
+    //   value: "ms",
+    // },
+    // {
+    //   bg: "card6",
+    //   heading: translations.mainCards.studentService,
+    //   image: "/service.svg",
+    //   value: "ss",
+    // },
+  ]
+  const coopsubCardData = [
+    {
+      bg:"card2",
+      heading: translations?.coopCards?.coopprocedure,
+      redirect: "procedure",
+      image: "/learning.svg",
+      value: "procedure",
+    },
+    {
+      bg:"card3",
+      heading: translations?.coopCards?.coopfaq,
+      redirect: "coopfaq",
+      image: "/development.svg",
+      value: "faq",
+    },
+    {
+      bg: "card8",
+      heading: translations?.coopCards?.coopparticum,
+      redirect: "/coop-documentation",
+      image: "/hand.svg",
+      value: "particum",
     },
   ]
   const [formData, setFormData] = useState({
@@ -225,7 +264,7 @@ setIsSuccessModalOpen(false);
   const [isloginClick, setIsLoginClick] = useState("");
   const [isNotLikeVideo, setIsNotLikeVideo] = useState(false);
   const [isClick, setIsClick] = useState(false);
-
+  const [isCoopMainClick, setIsCoopMainClick] = useState(false)
   const { stepCount, incrementStep, handleSkip } = useTour();
   useEffect(() => {
     if (stepCount === 4) {
@@ -240,7 +279,7 @@ setIsSuccessModalOpen(false);
         </div> */}
         <div id="cardsSection">
         </div>
-        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-20 ${isloginClick ? "mb-0" : "mb-20"}`}>
+        {/* <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-20 ${isloginClick ? "mb-0" : "mb-20"}`}>
           <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
             {cardsData?.map((data, index) => {
               return(
@@ -257,9 +296,58 @@ setIsSuccessModalOpen(false);
               )
             })}
           </div>
+        </div> */}
+        {visitCount < 4 && stepCount === 3 &&
+                <div class="bg-orange-400 bg-opacity-100 text-white p-8 rounded-lg shadow-lg absolute w-[350px] top-[140%] md:-left-[80%] -left-[100%] card-animation3">
+                  <div className="triangle-top"></div>
+                  <h2 class="text-xl font-semibold mb-2">3/4</h2>
+                  <h2 class="text-xl font-semibold mb-2">Visit SELC portal</h2>
+                  <p class="mb-6">Visit the student portal once you get knowledge</p>
+                  <div class="flex justify-end gap-5 mt-4">
+                    <button class="px-4 py-2 hover:bg-orange-500 text-base font-bold text-white rounded" onClick={handleSkip}>Skip Tour</button>
+                    <button class="px-4 py-0 bg-primary text-white rounded focus:outline-none" onClick={() => handleNext("portal")}>Next</button>
+                  </div>
+                </div>
+              }
+        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-44 ${isloginClick ? "mb-0" : "mb-20"}`}>
+          <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
+            {coopCardData?.map((data, index) => {
+              return(
+                <CoopCard
+                  key={index}
+                  bg={data.bg}
+                  heading={data.heading}
+                  image={data.image}
+                  value={data.value}
+                  setIsCoopMainClick = {() => setIsCoopMainClick(!isCoopMainClick)}
+                  isCoopMainClick={isCoopMainClick}
+                />
+              )
+            })}
+          </div>
         </div>
-        <div id="videoButton" className="h-20"></div>
-        {isloginClick === "login" &&
+        {isCoopMainClick && 
+          <div id="cardsSection2" className={`flex flex-col w-full justify-center`}>
+            <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
+              {coopsubCardData?.map((data, index) => {
+                return(
+                  <CoopSubCards
+                    key={index}
+                    bg={data.bg}
+                    heading={data.heading}
+                    image={data.image}
+                    value={data.value}
+                    redirect={data.redirect}
+                  />
+                )
+              })}
+            </div>
+          </div>
+        }
+        {/* <div id="videoButton" className="h-20"></div> */}
+
+
+        {/* {isloginClick === "login" &&
           <div className='px-10 flex md:flex-wrap md:flex-row flex-col items-center justify-center w-full mt-5 gap-5 my-5'>
             <LoginGuideCard data={loginStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick} visitCount={visitCount} />
           </div>
@@ -313,8 +401,10 @@ setIsSuccessModalOpen(false);
         <div className='px-10 flex flex-wrap w-full gap-5 justify-center my-5 mb-10'>
           <LoginGuideCard data={advisorStep} setIsNotLikeVideo={setIsNotLikeVideo} setIsLoginClick={setIsLoginClick}/>
         </div>
-        }
-        {isloginClick === "contact" &&
+        } */}
+
+
+        {/* {isloginClick === "contact" &&
           <div className="py-6 px-4 mx-auto min-w-[80%] max-w-screen-xl sm:py-8 lg:px-6 ">
               <form onSubmit={handleSubmit}  className="flex flex-col gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-[#fcfafc] rounded-lg border border-gray-200 shadow-sm lg:mb-28">
                   <div className='flex md:flex-row flex-col justify-between gap-4'>
@@ -368,7 +458,7 @@ setIsSuccessModalOpen(false);
               </form>
               <SuccessModal isOpen={isSuccessModalOpen} onClose={handleCloseModal} />
           </div>
-        }
+        } */}
         <Faq visitCount={visitCount}/>
       </div>
     </Layout>

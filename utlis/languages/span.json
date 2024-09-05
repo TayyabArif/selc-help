@@ -11,6 +11,25 @@
     "button": "Empezar",
     "banner": "Empoderar a los estudiantes hacia un futuro mejor. Empoderar a los estudiantes hacia un futuro mejor. Empoderar a los estudiantes hacia un futuro mejor"
   },
+  "coopCards": {
+    "portal": "Portal de Coop/Prácticas",
+    "moodle": "Aprendizaje a través de Moodle",
+    "office": "Cuenta de Estudiante de MS Office",
+    "admin": "Administración/Recepción",
+    "registration": "Departamento de Registro",
+    "studentService": "Servicios Estudiantiles",
+    "finance": "Departamento de Finanzas",
+    "career": "Coop y Desarrollo de Carrera",
+    "policies": "Procedimientos y Políticas del Colegio",
+    "contact": "Contáctenos",
+    "faq": "Preguntas Frecuentes",
+    "advisor": "Asesor de Marketing",
+    "learn": "Ver Más",
+    "learnLess": "Ocultar Subsecciones",
+    "coopprocedure": "Procedimiento y Políticas de Coop",
+    "coopfaq": "Preguntas Frecuentes sobre Coop",
+    "coopparticum": "Documentación de Coop/Prácticas"
+  },
   "mainCards": {
     "portal": "Portal estudiantil",
     "moodle": "Aprender a través de Moodle",

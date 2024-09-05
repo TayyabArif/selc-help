@@ -11,6 +11,25 @@
     "button": "Hajimemashou",
     "banner": "Seito-tachi o akarui mirai ni mukete shien shimasu. Seito-tachi o akarui mirai ni mukete shien shimasu. Akarui mirai ni mukete gakusei-tachi ni chikara o ataeru"
   },
+  "coopCards": {
+    "portal": "Kōpu/ Puroguramu",
+    "moodle": "Mūdoru o tsūjite manabu",
+    "office": "MS Ofisu gakusei akaunto",
+    "admin": "Kanri/ Uketsuke",
+    "registration": "Tōroku bumon",
+    "studentService": "Gakusei sābisu",
+    "finance": "Zaimu-bu",
+    "career": "Kōpu & Kyaria kaihatsu",
+    "policies": "Daigaku no tetsudzuki to porishī",
+    "contact": "O toiawase",
+    "faq": "FAQ",
+    "advisor": "Māketingu adobaizā",
+    "learn": "Motto miru",
+    "learnLess": "Sabusekushon o kakusu",
+    "coopprocedure": "Kōpu no tetsudzuki to porishī",
+    "coopfaq": "Kōpu ni kansuru yoku aru shitsumon",
+    "coopparticum": "Kōpu/ Puroguramu bunsho"
+  },
   "mainCards": {
     "portal": "Gakusei pōtaru",
     "moodle": "Mūdoru o tsūjite gakushū suru",

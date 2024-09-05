@@ -11,6 +11,25 @@
     "button": "Get Started",
     "banner": "Empowering Students Towards The Brighter Future. Empowering Students Towards The Brighter Future. Empowering Students Towards The Brighter Future"
   },
+  "coopCards": {
+    "portal": "Co-op/Practicum",
+    "moodle": "Learning through Moodle",
+    "office": "MS Office Student Account",
+    "admin": "Admin /Reception",
+    "registration": "Registration Department",
+    "studentService": "Student Services",
+    "finance": "Finance department",
+    "career": "Co-op & Career Development",
+    "policies": "College Procedure & Policies",
+    "contact": "Contact US",
+    "faq": "FAQ",
+    "advisor": "Marketing advisor",
+    "learn": "See More",
+    "learnLess": "Hide Sub Sections",
+    "coopprocedure": "Co-op procedure and policies",
+    "coopfaq": "Co-op Frequently Asked Question",
+    "coopparticum": "Co-op/ Practicum Documentation"
+  },
   "mainCards": {
     "portal": "Student portal",
     "moodle": "Learning through Moodle",
