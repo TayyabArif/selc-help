@@ -9,6 +9,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useTour } from '@/contexts/TourContext';
 import CoopCard from "@/components/CoopCard";
 import CoopSubCards from "@/components/CoopSubCards";
+import Image from "next/image";
 
 export default function Home() {
   const { selectedLanguage } = useLanguage();
@@ -297,7 +298,7 @@ setIsSuccessModalOpen(false);
             })}
           </div>
         </div> */}
-        <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-44 mb-[150px]`}>
+        {/* <div id="cardsSection1" className={`flex flex-col w-full justify-center mt-44 mb-[150px]`}>
           <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
             {coopCardData?.map((data, index) => {
               return(
@@ -313,9 +314,9 @@ setIsSuccessModalOpen(false);
               )
             })}
           </div>
-        </div>
-        {isCoopMainClick && 
-          <div id="cardsSection2" className={`flex flex-col w-full justify-center mb-[100px]`}>
+        </div> */}
+        {/* {isCoopMainClick &&  */}
+          <div id="cardsSection2" className={`flex flex-col w-full justify-center mt-44 mb-20`}>
             <div className="flex lg:flex-row flex-col gap-5 w-full flex-wrap justify-center lg:items-start items-center">
               {coopsubCardData?.map((data, index) => {
                 return(
@@ -331,7 +332,10 @@ setIsSuccessModalOpen(false);
               })}
             </div>
           </div>
-        }
+          <div>
+            <Image src="/program-division-Anugrah.png" alt="Program Division Anugrah" width={700} height={300} className="mx-auto mb-36 w-[50%] shadow-lg rounded" />
+          </div>
+        {/* } */}
         {/* <div id="videoButton" className="h-20"></div> */}
 
 

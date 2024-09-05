@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const procedure = () => {
+const Procedure = () => {
   return (
     <div className='p-10 bg-gray-100'>
             <div>
@@ -123,7 +123,7 @@ const procedure = () => {
                 </span>
             </div>
             <div className='mt-10'>
-                <Image src="/contact-info.png" alt="contact info" width={500} height={300} className="w-[70%]"
+                <Image src="/program division 2.PNG" alt="contact info" width={700} height={300} className="w-[55%]"
                         style={{
                             borderWidth: '0px',
                             fontStyle: 'inherit',
@@ -144,7 +144,7 @@ const procedure = () => {
             </div>
             <div className='bg-white my-10 rounded'>&nbsp;</div>
             <div>
-            <Image src="/placement-info.png" alt="contact info" width={500} height={300} className="w-[70%]"
+            <Image src="/job placement.PNG" alt="contact info" width={500} height={300} className="w-[55%]"
                         style={{
                             borderWidth: '0px',
                             fontStyle: 'inherit',
@@ -388,4 +388,4 @@ const procedure = () => {
   )
 }
 
-export default procedure
+export default Procedure

@@ -21,7 +21,7 @@ const CoopFaq = () => {
                     "You can have two part time jobs in order to complete your program required hours.",
                     "You cannot work more than 40 hours per week."
                 ]}
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/Working-Hours.jpg"
+                imageUrl="/working_hours.png"
                 imageAlt="Working Hours"
             />
 
@@ -35,6 +35,8 @@ const CoopFaq = () => {
                     "Employer Evaluation Form - at the end date of your co-op",
                     "**Important: All coop documents submissions must be done through the Student Portal www.myselcedu.com"
                 ]}
+                imageUrl="/documents_required.png"
+                imageAlt="Documents Required"
             />
 
             <Accordion
@@ -43,8 +45,8 @@ const CoopFaq = () => {
                 listItems={[
                     "All documents will be located on your Student Portal under the Co-op/Practicum Section (Subsection: Co-op/ Practicum Documentation)."
                 ]}
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/co-op-1.png"
-                imageAlt="Co-op Documents"
+                imageUrl="/locating_coop.png"
+                imageAlt="Locating coop"
             />
 
             <Accordion
@@ -55,7 +57,7 @@ const CoopFaq = () => {
                     "Go to My Records Tab and then click on Required Tasks.",
                     "Click on the document field you want to upload."
                 ]}
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/co-op-Doc-submit.png"
+                imageUrl="/submitting_coop.png"
                 imageAlt="Submitting Co-op Documents"
             />
 
@@ -67,7 +69,7 @@ const CoopFaq = () => {
                     "If your documents are declined, you will find them on Pending Tasks tab with a little note/comment.",
                     "If your documents are approved, you will find them on Completed Tasks Tab."
                 ]}
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/co-op-after-submission.png"
+                imageUrl="/after_documentation.png"
                 imageAlt="After Document Submission"
             />
 
@@ -78,7 +80,7 @@ const CoopFaq = () => {
                     "Read the information disclosed on the Note/Comment box on Required Tasks.",
                     "Revise and resubmit your documents as soon as possible to avoid any late submission fee."
                 ]}
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/co-op-sun-dec.png"
+                imageUrl="/submission_decline.png"
                 imageAlt="Submission Decline"
             />
 
@@ -88,6 +90,8 @@ const CoopFaq = () => {
                 listItems={[
                     "You can only work in different places if you have 2 part-time jobs."
                 ]}
+                imageUrl="/flexible_employment.png"
+                imageAlt="Flexible Employment"
             />
 
             <Accordion
@@ -98,6 +102,8 @@ const CoopFaq = () => {
                     "Submit the Student and Employer Evaluation forms from the job you are leaving.",
                     "Submit your new Work Experience Agreement and get an approval; you must receive an approval in order to start that job."
                 ]}
+                imageUrl="/workplace_change.png"
+                imageAlt="Workplace Change"
             />
 
             <Accordion
@@ -106,12 +112,14 @@ const CoopFaq = () => {
                 listItems={[
                     "Yes, the Pre Co-op Orientation is mandatory."
                 ]}
+                imageUrl="/orientation.png"
+                imageAlt="Orientation"
             />
 
             <Accordion
                 title="Contact Information for Co-op"
                 description="Who should I contact in the Co-op?"
-                imageUrl="https://selcedu.com/wp-content/uploads/2023/11/co-op-image.jpg"
+                imageUrl=""
                 imageAlt="Contact Information for Co-op"
             />
         </div>

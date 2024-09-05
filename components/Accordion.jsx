@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Accordion.module.css';
+import Image from 'next/image';
 
 const Accordion = ({ title, description, listItems, imageUrl, imageAlt }) => {
     const [isActive, setIsActive] = useState(false);
@@ -26,10 +27,13 @@ const Accordion = ({ title, description, listItems, imageUrl, imageAlt }) => {
                     </ul>
                 )}
                 {imageUrl && (
-                    <img
+                    <Image
                         src={imageUrl}
                         alt={imageAlt}
+                        width={500}
+                        height={100}
                         style={{ marginTop: '10px' }}
+                        className='shadow-xl border border-1 border-gray-600 rounded-md'
                     />
                 )}
             </div>

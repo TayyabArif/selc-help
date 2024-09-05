@@ -10,7 +10,7 @@ const CoopSubCards = ({bg, heading, image, redirect, value, isNotLikeVideo , set
 
   return (
     <div
-    className={`block filter brightness-100 bounce2 max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative group transition-transform transform hover:scale-110 lg:min-w-[20%] w-[90%] lg:h-[220px] cursor-pointer`}
+    className={`block filter brightness-100 max-w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative group transition-transform transform hover:scale-110 lg:min-w-[20%] w-[90%] lg:h-[220px] cursor-pointer`}
     onClick={() => 
         router.push(redirect)
     }
