@@ -1168,7 +1168,7 @@ const CoopDocumentation = () => {
                     </span>
                 </div>
     </Accordion>
-    <Accordion title="Practicum Documents for PBLMT- SCMS">
+    {/* <Accordion title="Practicum Documents for PBLMT- SCMS">
                 <div style={{ textAlign: 'left' }}>
                 <Image
                     style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
@@ -1355,7 +1355,7 @@ const CoopDocumentation = () => {
                 <div style={{ textAlign: 'left' }}>
                     <span style={{ fontSize: '10pt', fontFamily: 'arial, helvetica, sans-serif' }}>Thank you</span>
                 </div>
-    </Accordion>
+    </Accordion> */}
 </div>
   )
 }
