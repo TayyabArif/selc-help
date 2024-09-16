@@ -212,7 +212,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is the first document to be submitted by your co-op start date. Click here to download:
-                        <a href="/BFWEA.pdf" target="_blank" rel="noopener">
+                        <a href="/BAWEA.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>WEA Form</strong>
                         </a>
                         .&nbsp;<span style={{ textDecoration: 'underline' }}>
@@ -568,7 +568,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is the first document to be submitted by your co-op start date. Click here to download:
-                        <a href="/DMSWEA.pdf" target="_blank" rel="noopener">
+                        <a href="/DMPWEA.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>WEA Form</strong>
                         </a>
                         .&nbsp;<span style={{ textDecoration: 'underline' }}>
