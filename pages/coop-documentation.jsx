@@ -77,7 +77,7 @@ const CoopDocumentation = () => {
             </span>
             <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                 This form is to be filled out and signed by you. Click here to download:
-                <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                     <strong className='text-blue-500'>Student Evaluation Form</strong>
                 </a>
             </p>
@@ -168,7 +168,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -257,7 +257,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -346,7 +346,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -435,7 +435,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -524,7 +524,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -613,7 +613,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -702,7 +702,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -792,7 +792,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -881,7 +881,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -970,7 +970,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -1059,7 +1059,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
@@ -1148,7 +1148,7 @@ const CoopDocumentation = () => {
                     </span>
                     <p style={{ fontSize: '12pt', fontFamily: 'arial, helvetica, sans-serif' }}>
                         This form is to be filled out and signed by you. Click here to download:
-                        <a href="/studentevalution.pdf" target="_blank" rel="noopener">
+                        <a href="/studentevaluationupdated.pdf" target="_blank" rel="noopener">
                             <strong className='text-blue-500'>Student Evaluation Form</strong>
                         </a>
                     </p>
