@@ -23,7 +23,7 @@ const Procedure = () => {
                     To <span style={{ color: '#000000' }}>learn more about the requirements and expectations</span> during your Co-op period, please click&nbsp;
                     <span style={{ backgroundColor: '#f1c40f' }}>
                         <strong>
-                            <a href="Pre-Co-op--Resume-and-Mock-presentation---updated-August-2024--2-.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="Co-op_Requirements_and_Guidelines_2024_(Classe365).pdf" target="_blank" rel="noopener noreferrer">
                                 HERE.
                             </a>
                         </strong>
