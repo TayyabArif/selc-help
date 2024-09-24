@@ -13,7 +13,7 @@ const Footer = () => {
       image: "/location.svg"
     },
     {
-      value: "310-SELC (BC)",
+      value: "110-SELC (BC) / 106-SELC (BC)",
       image: "/phone.svg"
     },
     {
@@ -21,7 +21,7 @@ const Footer = () => {
       image: "/telephone.svg"
     },
     {
-      value: "Info@selcedu.com",
+      value: "co-op@selcedu.com / anugrah.k@selcedu.com",
       image: "/mail.svg"
     }
   ]

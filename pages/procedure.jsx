@@ -123,7 +123,7 @@ const Procedure = () => {
                 </span>
             </div>
             <div className='mt-10'>
-                <Image src="/program division 2.PNG" alt="contact info" width={700} height={300} className="w-[55%]"
+                <Image src="/program division 2.PNG" alt="contact info" width={700} height={300} className="w-[50%]"
                         style={{
                             borderWidth: '0px',
                             fontStyle: 'inherit',
@@ -144,7 +144,7 @@ const Procedure = () => {
             </div>
             <div className='bg-white my-10 rounded'>&nbsp;</div>
             <div>
-            <Image src="/job placement.PNG" alt="contact info" width={500} height={300} className="w-[55%]"
+            <Image src="/job placement.PNG" alt="contact info" width={500} height={300} className="w-[50%]"
                         style={{
                             borderWidth: '0px',
                             fontStyle: 'inherit',
