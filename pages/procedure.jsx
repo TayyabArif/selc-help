@@ -29,7 +29,17 @@ const Procedure = () => {
                         </strong>
                     </span>
                     <span style={{ color: '#000000' }}>
-                        &nbsp;We highly encourage you to review the slides and familiarize yourselves with the information provided in order to successfully graduate from your program of studies.
+                        &nbsp;We highly encourage you to review the slides and familiarize yourselves with the information provided in order to successfully graduate from your program of studies. Please click 
+                        <span style={{ backgroundColor: '#f1c40f' }} className="ml-1 font-bold">
+                        <a
+                            href="https://selcedu-my.sharepoint.com/:v:/p/tayyab/EQFPoHCMpZBJis3EfOSD3KMBjQ3kn6UOUGpU57nAyxqcvA?e=moFgyh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mx-2"
+                            >
+                             HERE
+                        </a>
+                        </span> to watch the recording of pre co-op meeting.
                     </span>
                 </span>
             </div>
