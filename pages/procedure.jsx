@@ -133,7 +133,7 @@ const Procedure = () => {
                 </span>
             </div>
             <div className='mt-10'>
-                <Image src="/program division 2.PNG" alt="contact info" width={700} height={300} className="w-[50%]"
+                <Image src="/contact-info-1.PNG" alt="contact info" width={700} height={300} className="w-[50%]"
                         style={{
                             borderWidth: '0px',
                             fontStyle: 'inherit',
