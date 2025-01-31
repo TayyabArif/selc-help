@@ -21,7 +21,7 @@ const Footer = () => {
       image: "/telephone.svg"
     },
     {
-      value: "co-op@selcedu.com / anugrah.k@selcedu.com",
+      value: "co-op@selcedu.com / uday.k@selcedu.com",
       image: "/mail.svg"
     }
   ]

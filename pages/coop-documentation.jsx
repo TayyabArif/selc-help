@@ -127,7 +127,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -177,7 +177,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -216,7 +216,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -266,7 +266,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -483,7 +483,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -533,7 +533,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -572,7 +572,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -622,7 +622,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -1018,7 +1018,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -1068,7 +1068,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -1107,7 +1107,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -1157,7 +1157,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
@@ -1196,7 +1196,7 @@ const CoopDocumentation = () => {
 							<strong className='text-blue-500'>WEA Form</strong>
 						</a>
 						.&nbsp;<span style={{ textDecoration: 'underline' }}>
-							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: anugrah.k@selcedu.com</em>
+							<em>If you are unemployed by your co-op start date, you must email us as soon as possible: co-op@selcedu.com</em>
 						</span>
 					</p>
 					<div className='w-full !mx-auto mt-2 flex justify-center'>
@@ -1246,7 +1246,7 @@ const CoopDocumentation = () => {
 				<div>
 					<span style={{ fontSize: '14pt', fontFamily: 'arial, helvetica, sans-serif' }}>
 						If you have any questions, please contact us at
-						<a href="mailto:anugrah.k@selcedu.com" className='text-blue-500 ml-1'>anugrah.k@selcedu.com</a>
+						<a href="mailto:co-op@selcedu.com" className='text-blue-500 ml-1'>co-op@selcedu.com</a>
 					</span>
 				</div>
 
