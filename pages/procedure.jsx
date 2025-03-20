@@ -23,7 +23,7 @@ const Procedure = () => {
                     To <span style={{ color: '#000000' }}>learn more about the requirements and expectations</span> during your Co-op period, please click&nbsp;
                     <span style={{ backgroundColor: '#f1c40f' }}>
                         <strong>
-                            <a href="Co-op_Requirements_and_Guidelines_2024_(Classe365).pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="Co-op Requirements-and-Guidelines-2025-(Classe365).pdf" target="_blank" rel="noopener noreferrer">
                                 HERE.
                             </a>
                         </strong>
@@ -132,7 +132,7 @@ const Procedure = () => {
                     />
                 </span>
             </div>
-            <div className='mt-10'>
+            {/* <div className='mt-10'>
                 <Image src="/contact-info-1.PNG" alt="contact info" width={700} height={300} className="w-[50%]"
                         style={{
                             borderWidth: '0px',
@@ -151,8 +151,8 @@ const Procedure = () => {
                             color: 'inherit'
                         }}
                     />
-            </div>
-            <div className='bg-white my-10 rounded'>&nbsp;</div>
+            </div> */}
+            <div className=' my-8 rounded'>&nbsp;</div>
             <div>
             <Image src="/job placement.PNG" alt="contact info" width={500} height={300} className="w-[50%]"
                         style={{
