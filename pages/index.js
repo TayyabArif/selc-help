@@ -78,8 +78,8 @@ export default function Home() {
               })}
             </div>
           </div>
-          <div>
-            <Image src="/contact-info-1.PNG" alt="Program Division Anugrah" width={700} height={300} className="mx-auto mb-36 w-[50%] shadow-lg rounded" />
+          <div className="h-[170px]">
+            {/* <Image src="/contact-info-1.PNG" alt="Program Division Anugrah" width={700} height={300} className="mx-auto mb-36 w-[50%] shadow-lg rounded" /> */}
           </div>
       </div>
     </Layout>
